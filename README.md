@@ -10,7 +10,7 @@ so everybody, just read it please,
 ```
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Currently%20learning&message=typescript&color=blue&style=for-the-badge" alt="amoraschi">
-  <img src="https://img.shields.io/static/v1?label=interested%20in&message=spaceflight&color=black&style=for-the-badge" alt="amoraschi">
-  <img src="https://shields-io-visitor-counter.herokuapp.com/badge?page=amoraschi&style=for-the-badge&color=brightgreen" alt="amoraschi">
+  <a href="https://github.com/amoraschi"><img src="https://img.shields.io/static/v1?label=Currently%20learning&message=typescript&color=blue&style=for-the-badge" alt="amoraschi" href=""></a>
+  <a href="https://github.com/amoraschi"><img src="https://img.shields.io/static/v1?label=interested%20in&message=spaceflight&color=black&style=for-the-badge" alt="amoraschi"></a>
+  <a href="https://github.com/amoraschi"><img src="https://shields-io-visitor-counter.herokuapp.com/badge?page=amoraschi&style=for-the-badge&color=brightgreen" alt="amoraschi"></a>
 </p>

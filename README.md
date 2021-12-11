@@ -18,10 +18,8 @@
 ✈ Currently trying to: **Learn how to do mix things that I like to do with things that I have to do**
 
 ```
-"So this looks like an About Me,
-so everybody, just read it please,
-'cause we need a little biography,
-'cause it feels so empty without it."
+Since we've no place to go,
+let it snow, let it snow, let it snow
 
-~ Eminem
+~ Santa
 ```

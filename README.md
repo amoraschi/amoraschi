@@ -15,7 +15,7 @@
 
 ✈ Fun fact: **I can speak 5 languages**
 
-✈ Currently trying to: **Learn how to do mix things that I like to do with things that I have to do**
+✈ Currently trying to: **Learn how to combine things that I like to do with things that I have to do**
 
 ```
 Since we've no place to go,

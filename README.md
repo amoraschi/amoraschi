@@ -16,10 +16,3 @@
 ✈ Fun fact: **I can speak 5 languages**
 
 ✈ Currently trying to: **Learn how to combine things that I like to do with things that I have to do**
-
-```
-Since we've no place to go,
-let it snow, let it snow, let it snow
-
-~ Santa
-```

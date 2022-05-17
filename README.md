@@ -1,9 +1,7 @@
 <h2 align="center">Hi, I'm Angelo 👋</h2>
 
 <p align="center">
-  <a href="https://discord.gg/Ad5cmz7Hs2"><img src="https://img.shields.io/badge/DISCORD-Support-7289da?style=for-the-badge" alt="amoraschi"></a>
-  <a href="https://github.com/amoraschi"><img src="https://img.shields.io/static/v1?label=Currently%20learning&message=typescript&color=blue&style=for-the-badge" alt="amoraschi" href=""></a>
-  <a href="https://github.com/amoraschi"><img src="https://img.shields.io/static/v1?label=interested%20in&message=spaceflight&color=black&style=for-the-badge" alt="amoraschi"></a>
+  <a href="https://github.com/amoraschi"><img src="https://img.shields.io/badge/DISCORD-AM%236069-7289da?style=for-the-badge" alt="amoraschi"></a>
   <a href="https://github.com/amoraschi"><img src="https://shields-io-visitor-counter.herokuapp.com/badge?page=amoraschi&style=for-the-badge&color=brightgreen" alt="amoraschi"></a>
 </p>
 <p align="center">
@@ -16,6 +14,9 @@
   <img src="https://discord.c99.nl/widget/theme-2/329599889174691841.png">
 </p>
 
-✈ Fun fact: **I should be able to speak 5 languages**
-
-✈ Currently trying to: **Learn how to combine things that I like to do with things that I have to do**
+✈ **Feel free to speak to me in**:
+  - [x] Spanish
+  - [x] Italian
+  - [ ] Japanese (intermediate)
+  - [x] English
+  - [ ] French (basic)

@@ -17,6 +17,6 @@
 ✈ **Feel free to speak to me in**:
   - [x] Spanish
   - [x] Italian
-  - [ ] Japanese (intermediate)
+  - [x] Japanese (intermediate)
   - [x] English
-  - [ ] French (basic)
+  - [x] French (basic)

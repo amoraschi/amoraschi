@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/badge/DISCORD-amoraschi-7289da?style=for-the-badge" alt="amoraschi"></a>
-  <!-- <a href="https://github.com/amoraschi"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge" alt="amoraschi"></a> -->
+  <a href="https://github.com/amoraschi"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge" alt="amoraschi"></a>
   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/static/v1?label=Currently%20learning&message=react | typescript&color=blue&style=for-the-badge" alt="amoraschi" href=""></a>
 </p>
 <p align="center">
@@ -20,34 +20,34 @@
 </p>
 <!-- WEATHER -->
 <p align="center">
-  <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
+  <img src="Test" alt="Weather icon">
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Sunny
-  <p align="center">🔼 39.7 ºC (103.5 ºF) 🔽 19.3 ºC (66.7 ºF)</p>
+  Test
+  <p align="center">🔼 Test 🔽 Test</p>
   <p align="center">
-    Wind - 19.8 km/h (12.3 miles/h)
+    Wind - Test
     <br />
-    Precipitation - 0 mm (0 in)
+    Precipitation - Test
     <br />
-    Visibility - 10 km (6 miles)
+    Visibility - Test
     <br />
-    Humidity - 30%
+    Humidity - Test
     <br />
-    UV Index - 7 (High)
+    UV Index - Test
   </p>
   <p align="center">
-    Sunrise - 07:20 AM
+    Sunrise - Test
     <br />
-    Sunset - 09:41 PM
+    Sunset - Test
     <br />
-    Moon phase - Waxing Crescent
+    Moon phase - Test
     <br />
-    Moon illumination - 15%
+    Moon illumination - Test
   </p>
 </p>
-<!-- WEATHER END --><!-- WEATHER END -->
+<!-- WEATHER END -->
 
 ✈ **Feel free to speak to me in**:
   - [x] Spanish

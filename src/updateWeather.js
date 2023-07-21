@@ -124,7 +124,7 @@ async function updateReadme (readme, weather) {
   console.log('Updated readme')
 }
 
-async function main () {
+async function updateAll () {
   console.log('Fetching weather')
   const weather = await fetchWeather()
   console.log('Fetching readme')
@@ -133,4 +133,4 @@ async function main () {
   await updateReadme(readme, weather)
 }
 
-main()
+updateAll()

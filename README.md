@@ -20,31 +20,31 @@
 </p>
 <!-- WEATHER -->
 <p align="center">
-  <img src="Test" alt="Weather icon">
+  <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Test
-  <p align="center">🔼 Test 🔽 Test</p>
+  Sunny
+  <p align="center">🔼 39.7 ºC (103.5 ºF) 🔽 19.3 ºC (66.7 ºF)</p>
   <p align="center">
-    Wind - Test
+    Wind - 19.8 km/h (12.3 miles/h)
     <br />
-    Precipitation - Test
+    Precipitation - 0 mm (0 in)
     <br />
-    Visibility - Test
+    Visibility - 10 km (6 miles)
     <br />
-    Humidity - Test
+    Humidity - 30%
     <br />
-    UV Index - Test
+    UV Index - 7 (High)
   </p>
   <p align="center">
-    Sunrise - Test
+    Sunrise - 07:20 AM
     <br />
-    Sunset - Test
+    Sunset - 09:41 PM
     <br />
-    Moon phase - Test
+    Moon phase - Waxing Crescent
     <br />
-    Moon illumination - Test
+    Moon illumination - 15%
   </p>
 </p>
 <!-- WEATHER END -->

@@ -49,6 +49,8 @@
 </p>
 <!-- WEATHER END -->
 
+<p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>
+
 ✈ **Feel free to speak to me in**:
   - [x] Spanish
   - [x] Italian (intermediate)

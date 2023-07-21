@@ -1,8 +1,9 @@
 name: Daily Update
 
 on:
-  schedule:
-    - cron: "0 16 * * *"
+  workflow_dispatch
+  # schedule:
+  #   - cron: "0 16 * * *"
 
 jobs:
   build:
@@ -26,6 +27,7 @@ jobs:
           touch .env
           echo KEY=${{ secrets.KEY }} >> .env
           echo POS=${{ secrets.POS }} >> .env
+          echo PERSTOKEN=${{ secrets.PERSTOKEN }} >> .env
 
       - name: Run daily update script
         run: |

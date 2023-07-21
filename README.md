@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/badge/DISCORD-amoraschi-7289da?style=for-the-badge" alt="amoraschi"></a>
-  <a href="https://github.com/amoraschi"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge" alt="amoraschi"></a>
+  <!-- <a href="https://github.com/amoraschi"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge" alt="amoraschi"></a> -->
   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/static/v1?label=Currently%20learning&message=react | typescript&color=blue&style=for-the-badge" alt="amoraschi" href=""></a>
 </p>
 <p align="center">
@@ -18,6 +18,34 @@
   <img src="https://github-readme-stats.vercel.app/api?username=amoraschi&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="amoraschi's GitHub stats" width="420px"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=amoraschi&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" width="420px"/>
 </p>
+<!-- WEATHER -->
+<p align="center">
+  <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" align="center">
+  <br />
+  <strong>Today's forecast:</strong>
+  <br />
+  Sunny
+  <p align="center">🔼 16 ºC (72 ºF) 🔽 0 ºC (10 ºF)</p>
+  <p align="center">
+    Wind - 19 km/h (12 miles/h)
+    <br />
+    Precipitation - 0 mm (0 in)
+    <br />
+    Visibility - 10 km (6 miles)
+    <br />
+    UV Index - 7 (High)
+  </p>
+  <p align="center">
+    Sunrise - 7:20 AM
+    <br />
+    Sunset - 09:41 PM
+    <br />
+    Moon phase - Waxing Crescent
+    <br />
+    Moon illumination - 9
+  </p>
+</p>
+<!-- WEATHER END -->
 
 ✈ **Feel free to speak to me in**:
   - [x] Spanish

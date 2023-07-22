@@ -57,7 +57,7 @@
 
 <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>
 
-<details align="center" open>
+<details open>
   <summary><strong>✈ Feel free to speak to me in:</strong></summary>
 
   - [x] English

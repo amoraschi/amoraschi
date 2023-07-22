@@ -25,26 +25,26 @@
   <strong>Today's forecast</strong>
   <br />
   Sunny
-  <p align="center">🔼 39.7 ºC (103.5 ºF) 🔽 19.3 ºC (66.7 ºF)</p>
+  <p align="center">🔼 39.5 ºC (103.1 ºF) 🔽 18.3 ºC (64.9 ºF)</p>
   <p align="center">
-    Wind - 19.8 km/h (12.3 miles/h)
+    Wind - 25.2 km/h (15.7 miles/h)
     <br />
     Precipitation - 0 mm (0 in)
     <br />
     Visibility - 10 km (6 miles)
     <br />
-    Humidity - 30%
+    Humidity - 32%
     <br />
-    UV Index - 7 (High)
+    UV Index - 9 (Very High)
   </p>
   <p align="center">
-    Sunrise - 07:20 AM
+    Sunrise - 07:19 AM
     <br />
     Sunset - 09:41 PM
     <br />
     Moon phase - Waxing Crescent
     <br />
-    Moon illumination - 15%
+    Moon illumination - 9%
   </p>
 </p>
 <!-- WEATHER END -->

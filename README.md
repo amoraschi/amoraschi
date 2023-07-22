@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/badge/DISCORD-amoraschi-7289da?style=for-the-badge" alt="amoraschi"></a>
-  <a href="https://github.com/amoraschi"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge" alt="amoraschi"></a>
+  <!-- <a href="https://github.com/amoraschi"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge" alt="amoraschi"></a> -->
   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/static/v1?label=Currently%20learning&message=react | typescript&color=blue&style=for-the-badge" alt="amoraschi" href=""></a>
 </p>
 <p align="center">
@@ -26,26 +26,33 @@
   <br />
   Sunny
   <p align="center">🔼 39.5 ºC (103.1 ºF) 🔽 18.3 ºC (64.9 ºF)</p>
-  <p align="center">
-    Wind - 25.2 km/h (15.7 miles/h)
-    <br />
-    Precipitation - 0 mm (0 in)
-    <br />
-    Visibility - 10 km (6 miles)
-    <br />
-    Humidity - 32%
-    <br />
-    UV Index - 9 (Very High)
-  </p>
-  <p align="center">
-    Sunrise - 07:19 AM
-    <br />
-    Sunset - 09:41 PM
-    <br />
-    Moon phase - Waxing Crescent
-    <br />
-    Moon illumination - 9%
-  </p>
+  <details align="center">
+    <summary>⛅ Weather information</summary>
+    <p align="center">
+      Wind - 25.2 km/h (15.7 miles/h)
+      <br />
+      Precipitation - 0 mm (0 in)
+      <br />
+      Visibility - 10 km (6 miles)
+      <br />
+      Humidity - 32%
+      <br />
+      UV Index - 9 (Very High)
+    </p>
+  </details>
+  <details align="center">
+    <summary>🌍 Planetary information</summary>
+    <p align="center">
+      Sunrise - 07:19 AM
+      <br />
+      Sunset - 09:41 PM
+      <br />
+      Moon phase - Waxing Crescent
+      <br />
+      Moon illumination - 9%
+    </p>
+  </details>
+  
 </p>
 <!-- WEATHER END -->
 

@@ -83,26 +83,32 @@ function newData (weather) {
   '  <br />\n' +
   `  ${weather.condition.text}\n` +
   `  <p align="center">🔼 ${weather.temperature.maxcs} ºC (${weather.temperature.maxft} ºF) 🔽 ${weather.temperature.mincs} ºC (${weather.temperature.minft} ºF)</p>\n` +
-  '  <p align="center">\n' +
-  `    Wind - ${weather.maxwind.kph} km/h (${weather.maxwind.mph} miles/h)\n` +
-  '    <br />\n' +
-  `    Precipitation - ${weather.precipitation.mm} mm (${weather.precipitation.in} in)\n` +
-  '    <br />\n' +
-  `    Visibility - ${weather.avgvisibility.km} km (${weather.avgvisibility.miles} miles)\n` +
-  '    <br />\n' +
-  `    Humidity - ${weather.avghumidity}%\n` +
-  '    <br />\n' +
-  `    UV Index - ${weather.uv.index} (${weather.uv.text})\n` +
-  '  </p>\n' +
-  '  <p align="center">\n' +
-  `    Sunrise - ${weather.sun.rise}\n` +
-  '    <br />\n' +
-  `    Sunset - ${weather.sun.set}\n` +
-  '    <br />\n' +
-  `    Moon phase - ${weather.moon.phase}\n` +
-  '    <br />\n' +
-  `    Moon illumination - ${weather.moon.illumination}%\n` +
-  '  </p>\n' +
+  '  <details align="center">\n' +
+  '    <summary>⛅ Weather information</summary>\n' +
+  '    <p align="center">\n' +
+  `      Wind - ${weather.maxwind.kph} km/h (${weather.maxwind.mph} miles/h)\n` +
+  '      <br />\n' +
+  `      Precipitation - ${weather.precipitation.mm} mm (${weather.precipitation.in} in)\n` +
+  '      <br />\n' +
+  `      Visibility - ${weather.avgvisibility.km} km (${weather.avgvisibility.miles} miles)\n` +
+  '      <br />\n' +
+  `      Humidity - ${weather.avghumidity}%\n` +
+  '      <br />\n' +
+  `      UV Index - ${weather.uv.index} (${weather.uv.text})\n` +
+  '    </p>\n' +
+  '  </details>\n' +
+  '  <details align="center">\n' +
+  '    <summary>🌍 Planetary information</summary>\n' +
+  '    <p align="center">\n' +
+  `      Sunrise - ${weather.sun.rise}\n` +
+  '      <br />\n' +
+  `      Sunset - ${weather.sun.set}\n` +
+  '      <br />\n' +
+  `      Moon phase - ${weather.moon.phase}\n` +
+  '      <br />\n' +
+  `      Moon illumination - ${weather.moon.illumination}%\n` +
+  '    </p>\n' +
+  '  </details>\n' +
   '</p>\n'
 }
 

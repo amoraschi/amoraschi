@@ -75,9 +75,13 @@ function findPosition (content) {
 }
 
 function newData (weather) {
+  const date = weather.date.split('-').join(' - ')
+
   return '<!-- WEATHER -->\n' +
   '<p align="center">\n' +
   `  <img src="https:${weather.condition.icon}" alt="Weather icon">\n` +
+  '  <br />\n' +
+  `  <strong>${date}</strong>\n` +
   '  <br />\n' +
   '  <strong>Today\'s forecast</strong>\n' +
   '  <br />\n' +

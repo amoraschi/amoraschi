@@ -12,6 +12,7 @@ async function fetchWeather () {
   const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${process.env.KEY}&q=${process.env.POS}`)
   const parsed = await res.json()
   const day = parsed.forecast.forecastday[0].day
+  const current = parsed.current
   const astro = parsed.forecast.forecastday[0].astro
 
   return {
@@ -20,28 +21,32 @@ async function fetchWeather () {
       maxcs: day.maxtemp_c,
       maxft: day.maxtemp_f,
       mincs: day.mintemp_c,
-      minft: day.mintemp_f
+      minft: day.mintemp_f,
+      currentcs: current.temp_c,
+      currentft: current.temp_f
     },
-    maxwind: {
-      kph: day.maxwind_kph,
-      mph: day.maxwind_mph
+    wind: {
+      kph: current.wind_kph,
+      mph: current.wind_mph,
+      direction: current.wind_dir,
+      degree: current.wind_degree
     },
     precipitation: {
-      mm: day.totalprecip_mm,
-      in: day.totalprecip_in
+      mm: current.precip_mm,
+      in: current.precip_in
     },
-    avgvisibility: {
-      km: day.avgvis_km,
-      miles: day.avgvis_miles
+    visibility: {
+      km: current.vis_km,
+      miles: current.vis_miles
     },
-    avghumidity: day.avghumidity,
+    humidity: current.humidity,
     uv: {
-      index: day.uv,
-      text: getUVIndex(day.uv)
+      index: current.uv,
+      text: getUVIndex(current.uv)
     },
     condition: {
-      text: day.condition.text,
-      icon: day.condition.icon
+      text: current.condition.text,
+      icon: current.condition.icon
     },
     sun: {
       rise: astro.sunrise,
@@ -85,18 +90,18 @@ function newData (weather) {
   '  <br />\n' +
   '  <strong>Today\'s forecast</strong>\n' +
   '  <br />\n' +
-  `  ${weather.condition.text}\n` +
+  `  ${weather.condition.text} - ${weather.temperature.currentcs} ºC (${weather.temperature.currentft} ºF)\n` +
   `  <p align="center">🔼 ${weather.temperature.maxcs} ºC (${weather.temperature.maxft} ºF) 🔽 ${weather.temperature.mincs} ºC (${weather.temperature.minft} ºF)</p>\n` +
   '  <details align="center">\n' +
   '    <summary>⛅ Weather information</summary>\n' +
   '    <p align="center">\n' +
-  `      Wind - ${weather.maxwind.kph} km/h (${weather.maxwind.mph} miles/h)\n` +
+  `      Wind - ${weather.wind.direction} ${weather.wind.kph} km/h (${weather.wind.mph} miles/h)\n` +
   '      <br />\n' +
   `      Precipitation - ${weather.precipitation.mm} mm (${weather.precipitation.in} in)\n` +
   '      <br />\n' +
-  `      Visibility - ${weather.avgvisibility.km} km (${weather.avgvisibility.miles} miles)\n` +
+  `      Visibility - ${weather.visibility.km} km (${weather.visibility.miles} miles)\n` +
   '      <br />\n' +
-  `      Humidity - ${weather.avghumidity}%\n` +
+  `      Humidity - ${weather.humidity}%\n` +
   '      <br />\n' +
   `      UV Index - ${weather.uv.index} (${weather.uv.text})\n` +
   '    </p>\n' +

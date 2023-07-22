@@ -133,7 +133,7 @@ async function updateReadme (readme, weather) {
     owner: 'amoraschi',
     repo: 'amoraschi',
     path: 'README.md',
-    message: `Weather update for ${weather.last_updated}`,
+    message: `Weather update for ${weather.lastupdate}`,
     content: Buffer.from(newContent).toString('base64'),
     sha: readme.sha
   })

@@ -138,7 +138,7 @@ async function updateReadme (readme, weather) {
     sha: readme.sha
   })
 
-  console.log(`Updated readme for ${weather.date}`)
+  console.log(`Updated readme for ${weather.lastupdate}`)
 }
 
 async function updateAll () {

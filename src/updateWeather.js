@@ -81,7 +81,7 @@ function findPosition (content) {
 }
 
 function newData (weather) {
-  const date = weather.date.split('-').join(' - ')
+  const date = weather.lastupdate.replace(/-/g, '/')
 
   return '<!-- WEATHER -->\n' +
   '<p align="center">\n' +

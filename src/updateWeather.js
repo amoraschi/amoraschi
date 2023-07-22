@@ -15,6 +15,7 @@ async function fetchWeather () {
   const astro = parsed.forecast.forecastday[0].astro
 
   return {
+    date: parsed.forecast.forecastday[0].date,
     temperature: {
       maxcs: day.maxtemp_c,
       maxft: day.maxtemp_f,
@@ -121,7 +122,7 @@ async function updateReadme (readme, weather) {
     sha: readme.sha
   })
 
-  console.log('Updated readme')
+  console.log(`Updated readme for ${weather.date}`)
 }
 
 async function updateAll () {

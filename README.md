@@ -17,7 +17,7 @@
 <p align="center">
   <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   <br />
-  <strong>2023/07/23 16:15</strong>
+  <strong>2023/07/23 17:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
@@ -32,7 +32,7 @@
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 17%
+      Humidity - 24%
       <br />
       UV Index - 9 (Very High)
     </p>

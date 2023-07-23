@@ -17,16 +17,16 @@
 <p align="center">
   <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
   <br />
-  <strong>2023/07/23 23:15</strong>
+  <strong>2023/07/24 00:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Clear - 30 ºC (86 ºF)
-  <p align="center">🔼 39.7 ºC (103.5 ºF) 🔽 19.7 ºC (67.5 ºF)</p>
+  Clear - 29 ºC (84.2 ºF)
+  <p align="center">🔼 40.2 ºC (104.4 ºF) 🔽 20 ºC (68 ºF)</p>
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SSW 16.9 km/h (10.5 miles/h)
+      Wind - SSW 13 km/h (8.1 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
@@ -40,13 +40,13 @@
   <details align="center">
     <summary>🌍 Planetary information</summary>
     <p align="center">
-      Sunrise - 07:21 AM
+      Sunrise - 07:22 AM
       <br />
-      Sunset - 09:40 PM
+      Sunset - 09:39 PM
       <br />
       Moon phase - Waxing Crescent
       <br />
-      Moon illumination - 23%
+      Moon illumination - 31%
     </p>
   </details>
 </p>

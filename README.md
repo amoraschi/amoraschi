@@ -17,7 +17,7 @@
 <p align="center">
   <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   <br />
-  <strong>2023/07/25 16:15</strong>
+  <strong>2023/07/25 17:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
@@ -26,7 +26,7 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SW 6.8 km/h (4.3 miles/h)
+      Wind - S 20.2 km/h (12.5 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
@@ -34,7 +34,7 @@
       <br />
       Humidity - 23%
       <br />
-      UV Index - 9 (Very High)
+      UV Index - 8 (Very High)
     </p>
   </details>
   <details align="center">

@@ -1,4 +1,4 @@
-name: Daily Update
+name: Hourly Update
 
 on:
   workflow_dispatch

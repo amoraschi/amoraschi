@@ -17,24 +17,24 @@
 <p align="center">
   <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   <br />
-  <strong>2023/07/29 09:00</strong>
+  <strong>2023/07/29 11:30</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Sunny - 21 ºC (69.8 ºF)
+  Sunny - 29 ºC (84.2 ºF)
   <p align="center">🔼 41.7 ºC (107.1 ºF) 🔽 20.4 ºC (68.7 ºF)</p>
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - N 3.6 km/h (2.2 miles/h)
+      Wind - NE 4 km/h (2.5 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 56%
+      Humidity - 37%
       <br />
-      UV Index - 8 (Very High)
+      UV Index - 9 (Very High)
     </p>
   </details>
   <details align="center">

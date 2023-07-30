@@ -223,23 +223,25 @@ async function getImage (hours) {
           }
         }
       }
-    },
-    plugins: [{
-      id: 'background-colour',
-      beforeDraw: (chart) => {
-        const ctx = chart.ctx
-        ctx.save()
-        ctx.fillStyle = backgroundColour
-        ctx.fillRect(0, 0, width, height)
-        ctx.restore()
-      }
-    }]
+    }
+    // },
+    // plugins: [{
+    //   id: 'background-colour',
+    //   beforeDraw: (chart) => {
+    //     const ctx = chart.ctx
+    //     ctx.save()
+    //     ctx.fillStyle = backgroundColour
+    //     ctx.fillRect(0, 0, width, height)
+    //     ctx.restore()
+    //   }
+    // }]
   }
 
   const chartCallback = (ChartJS) => {
     ChartJS.defaults.responsive = true
     ChartJS.defaults.maintainAspectRatio = true
     ChartJS.defaults.color = 'white'
+    ChartJS.defaults.backgroundColor = backgroundColour
   }
 
   const chart = new ChartJSNodeCanvas({ width, height, chartCallback })

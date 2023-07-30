@@ -17,22 +17,22 @@
 <p align="center">
   <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
   <br />
-  <strong>2023/07/30 01:15</strong>
+  <strong>2023/07/30 03:30</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Clear - 28 ºC (82.4 ºF)
+  Clear - 26 ºC (78.8 ºF)
   <p align="center">🔼 44 ºC (111.2 ºF) 🔽 23.2 ºC (73.8 ºF)</p>
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SW 13 km/h (8.1 miles/h)
+      Wind - NNE 3.6 km/h (2.2 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 48%
+      Humidity - 54%
       <br />
       UV Index - 1 (Low)
     </p>

@@ -181,7 +181,7 @@ function newData (weather) {
 async function getImage (hours) {
   const width = 600
   const height = 300
-  const backgroundColour = 'black'
+  const backgroundColor = 'black'
 
   const config = {
     type: 'line',
@@ -230,7 +230,7 @@ async function getImage (hours) {
     //   beforeDraw: (chart) => {
     //     const ctx = chart.ctx
     //     ctx.save()
-    //     ctx.fillStyle = backgroundColour
+    //     ctx.fillStyle = backgroundColor
     //     ctx.fillRect(0, 0, width, height)
     //     ctx.restore()
     //   }
@@ -241,7 +241,7 @@ async function getImage (hours) {
     ChartJS.defaults.responsive = true
     ChartJS.defaults.maintainAspectRatio = true
     ChartJS.defaults.color = 'white'
-    ChartJS.defaults.backgroundColor = backgroundColour
+    ChartJS.defaults.backgroundColor = backgroundColor
   }
 
   const chart = new ChartJSNodeCanvas({ width, height, chartCallback })

@@ -25,6 +25,7 @@
   <p align="center">🔼 43.6 ºC (110.5 ºF) 🔽 23.8 ºC (74.8 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
+    <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
     <table align="center">
       <thead>
         <tr>

@@ -15,7 +15,9 @@
 
 <!-- WEATHER -->
 <p align="center">
-  <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
+  <a href="https://www.weatherapi.com/" target="_blank">
+    <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
+  </a>
   <br />
   <strong>2023/07/30 12:45</strong>
   <br />
@@ -59,7 +61,9 @@
         </tr>
       </tbody>
     </table>
-    <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
+    <a href="https://www.weatherapi.com/" target="_blank">
+      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
+    </a>
   </details>
   <details align="center">
     <summary>⛅ Weather information</summary>

@@ -17,12 +17,16 @@
 <p align="center">
   <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   <br />
-  <strong>2023/07/30 11:15</strong>
+  <strong>2023/07/30 11:45</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Sunny - 31 ºC (87.8 ºF)
+  Sunny - 32 ºC (89.6 ºF)
   <p align="center">🔼 43.6 ºC (110.5 ºF) 🔽 23.8 ºC (74.8 ºF)</p>
+  <details align="center">
+    <summary>🕐 Hourly forecast</summary>
+    <img src="https://github.com/amoraschi/amoraschi/blob/main/data/hourly.png?raw=true" alt="Hourly forecast">
+  </details>
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
@@ -32,7 +36,7 @@
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 41%
+      Humidity - 38%
       <br />
       UV Index - 9 (Very High)
     </p>

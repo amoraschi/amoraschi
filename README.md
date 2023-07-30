@@ -21,7 +21,7 @@
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Sunny - 41.4 ºC (106.5 ºF)
+  Sunny - 33 ºC (91.4 ºF)
   <p align="center">🔼 43.6 ºC (110.5 ºF) 🔽 23.8 ºC (74.8 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
@@ -63,13 +63,13 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SW 14 km/h (8.7 miles/h)
+      Wind - SSE 4 km/h (2.5 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 19%
+      Humidity - 36%
       <br />
       UV Index - 10 (Very High)
     </p>

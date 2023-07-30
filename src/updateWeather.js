@@ -2,7 +2,6 @@ import { config } from 'dotenv'
 import fetch from 'node-fetch'
 import { Octokit } from '@octokit/core'
 import { ChartJSNodeCanvas } from 'chartjs-node-canvas'
-import { writeFileSync } from 'fs'
 
 config()
 
@@ -240,7 +239,6 @@ async function getImage (hours) {
   const chartCallback = (ChartJS) => {
     ChartJS.defaults.responsive = true
     ChartJS.defaults.maintainAspectRatio = true
-    // font color
     ChartJS.defaults.color = 'white'
   }
 
@@ -255,9 +253,6 @@ async function updateFiles (oldReadme, weather, image, oldImage) {
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
   const newContent = oldContent.slice(0, position.start) + newData(weather) + oldContent.slice(position.end)
-
-  // writeFileSync('TEST.md', newContent)
-  // return
 
   console.log('Updating image')
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
@@ -286,9 +281,6 @@ async function updateAll () {
   console.log('Fetching weather and image')
   const weather = await fetchWeather()
   const image = await getImage(weather.hours)
-
-  // writeFileSync('weather.json', JSON.stringify(weather, null, 2))
-  // return
 
   console.log('Fetching old readme and image')
   const oldReadme = await fetchReadme()

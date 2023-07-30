@@ -24,10 +24,6 @@
   Sunny - 41.4 ºC (106.5 ºF)
   <p align="center">🔼 43.6 ºC (110.5 ºF) 🔽 23.8 ºC (74.8 ºF)</p>
   <details align="center">
-    <summary>🕐 Hourly forecast</summary>
-    <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
-  </details>
-  <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
       Wind - SW 14 km/h (8.7 miles/h)

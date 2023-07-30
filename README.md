@@ -28,6 +28,7 @@
     <table align="center">
       <thead>
         <tr>
+          <th>12:00</th>
           <th>13:00</th>
           <th>14:00</th>
           <th>15:00</th>
@@ -43,6 +44,7 @@
       </thead>
       <tbody>
         <tr>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />41.4 ºC (106.5 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />41.2 ºC (106.2 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />43.6 ºC (110.5 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />43.6 ºC (110.5 ºF)</td>

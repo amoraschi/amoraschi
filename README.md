@@ -19,7 +19,7 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/07/31 00:00</strong>
+  <strong>2023/07/31 00:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
@@ -30,58 +30,10 @@
     <table align="center">
       <thead>
         <tr>
-          <th>0:00</th>
-          <th>1:00</th>
-          <th>2:00</th>
-          <th>3:00</th>
-          <th>4:00</th>
-          <th>5:00</th>
-          <th>6:00</th>
-          <th>7:00</th>
-          <th>8:00</th>
-          <th>9:00</th>
-          <th>10:00</th>
-          <th>11:00</th>
-          <th>12:00</th>
-          <th>13:00</th>
-          <th>14:00</th>
-          <th>15:00</th>
-          <th>16:00</th>
-          <th>17:00</th>
-          <th>18:00</th>
-          <th>19:00</th>
-          <th>20:00</th>
-          <th>21:00</th>
-          <th>22:00</th>
-          <th>23:00</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />23.8 ºC (74.8 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />23.3 ºC (73.9 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />22.9 ºC (73.2 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />22.5 ºC (72.5 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />22.1 ºC (71.8 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />21.7 ºC (71.1 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />21.9 ºC (71.4 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.7 ºC (76.5 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />27.4 ºC (81.3 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />30.3 ºC (86.5 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />33.1 ºC (91.6 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />38.5 ºC (101.3 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />39.2 ºC (102.6 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />42.3 ºC (108.1 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />42.9 ºC (109.2 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />43 ºC (109.4 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />41.8 ºC (107.2 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />39.6 ºC (103.3 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />36.1 ºC (97 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />31.6 ºC (88.9 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />26.8 ºC (80.2 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />24.9 ºC (76.8 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.1 ºC (75.4 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />23.9 ºC (75 ºF)</td>
         </tr>
       </tbody>
     </table>

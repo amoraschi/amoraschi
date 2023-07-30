@@ -212,14 +212,14 @@ async function getImage (hours) {
           type: 'linear',
           position: 'left',
           ticks: {
-            callback: (value) => ` ${value}ºC`
+            callback: (value) => ` ${value} ºC`
           }
         },
         fahrenheit: {
           type: 'linear',
           position: 'right',
           ticks: {
-            callback: (value) => `${value}ºF`
+            callback: (value) => `${value} ºF `
           }
         }
       }

@@ -115,7 +115,7 @@ function findPosition (content) {
 
 function newData (weather) {
   const date = weather.lastupdate.replace(/-/g, '/')
-  const currentHours = weather.hours.slice(new Date().getHours())
+  const currentHours = process.env.ISGITHUB == null ? weather.hours.slice(new Date().getHours()) : weather.hours.slice(new Date().getHours() + 2)
 
   return '<!-- WEATHER -->\n' +
   '<p align="center">\n' +

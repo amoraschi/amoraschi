@@ -41,45 +41,23 @@
           <th>10:00</th>
           <th>11:00</th>
           <th>12:00</th>
-          <th>13:00</th>
-          <th>14:00</th>
-          <th>15:00</th>
-          <th>16:00</th>
-          <th>17:00</th>
-          <th>18:00</th>
-          <th>19:00</th>
-          <th>20:00</th>
-          <th>21:00</th>
-          <th>22:00</th>
-          <th>23:00</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />26.2 ºC (79.2 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />25.7 ºC (78.3 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />25.3 ºC (77.5 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />24.7 ºC (76.5 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />24.1 ºC (75.4 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />23.8 ºC (74.8 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />24.1 ºC (75.4 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />26.7 ºC (80.1 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />29.5 ºC (85.1 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />32.1 ºC (89.8 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />34.4 ºC (93.9 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />39.5 ºC (103.1 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />41.4 ºC (106.5 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />41.2 ºC (106.2 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />43.6 ºC (110.5 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />43.6 ºC (110.5 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />43.4 ºC (110.1 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />41.1 ºC (106 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />36.5 ºC (97.7 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />30.9 ºC (87.6 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />27.1 ºC (80.8 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />25.5 ºC (77.9 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />24.8 ºC (76.6 ºF)</td>
-          <td align="center"><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />24.5 ºC (76.1 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />26.2 ºC (79.2 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />25.7 ºC (78.3 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />25.3 ºC (77.5 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.7 ºC (76.5 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.1 ºC (75.4 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />23.8 ºC (74.8 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.1 ºC (75.4 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />26.7 ºC (80.1 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />29.5 ºC (85.1 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />32.1 ºC (89.8 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />34.4 ºC (93.9 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />39.5 ºC (103.1 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />41.4 ºC (106.5 ºF)</td>
         </tr>
       </tbody>
     </table>

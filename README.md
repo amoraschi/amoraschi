@@ -19,7 +19,7 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/07/30 12:45</strong>
+  <strong>2023/07/30 13:00</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
@@ -30,6 +30,7 @@
     <table align="center">
       <thead>
         <tr>
+          <th>11:00</th>
           <th>12:00</th>
           <th>13:00</th>
           <th>14:00</th>
@@ -46,6 +47,7 @@
       </thead>
       <tbody>
         <tr>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />39.5 ºC (103.1 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />41.4 ºC (106.5 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />41.2 ºC (106.2 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />43.6 ºC (110.5 ºF)</td>

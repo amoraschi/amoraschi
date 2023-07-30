@@ -28,6 +28,7 @@ jobs:
           echo KEY=${{ secrets.KEY }} >> .env
           echo POS=${{ secrets.POS }} >> .env
           echo PERSTOKEN=${{ secrets.PERSTOKEN }} >> .env
+          echo ISGITHUB=${{ secrets.ISGITHUB }} >> .env
 
       - name: Run hourly update script
         run: |

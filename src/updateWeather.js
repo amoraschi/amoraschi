@@ -115,7 +115,7 @@ function findPosition (content) {
 
 function newData (weather) {
   const date = weather.lastupdate.replace(/-/g, '/')
-  const currentHours = weather.hours.slice(new Date().getHours())
+  const currentHours = process.env.ISGITHUB == null ? weather.hours.slice(new Date().getHours()) : weather.hours.slice(new Date().getHours() + 2)
 
   return '<!-- WEATHER -->\n' +
   '<p align="center">\n' +
@@ -212,14 +212,14 @@ async function getImage (hours) {
           type: 'linear',
           position: 'left',
           ticks: {
-            callback: (value) => ` ${value}ºC`
+            callback: (value) => ` ${value} ºC`
           }
         },
         fahrenheit: {
           type: 'linear',
           position: 'right',
           ticks: {
-            callback: (value) => `${value}ºF`
+            callback: (value) => `${value} ºF `
           }
         }
       }

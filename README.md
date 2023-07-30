@@ -17,7 +17,7 @@
 <p align="center">
   <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   <br />
-  <strong>2023/07/30 11:45</strong>
+  <strong>2023/07/30 12:00</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
@@ -38,7 +38,7 @@
       <br />
       Humidity - 38%
       <br />
-      UV Index - 9 (Very High)
+      UV Index - 10 (Very High)
     </p>
   </details>
   <details align="center">

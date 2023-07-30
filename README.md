@@ -21,7 +21,7 @@
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Sunny - 31 ºC (87.8 ºF)
+  Sunny - 32 ºC (89.6 ºF)
   <p align="center">🔼 43.6 ºC (110.5 ºF) 🔽 23.8 ºC (74.8 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
@@ -36,7 +36,7 @@
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 41%
+      Humidity - 38%
       <br />
       UV Index - 10 (Very High)
     </p>

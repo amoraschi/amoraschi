@@ -19,18 +19,17 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/07/30 19:15</strong>
+  <strong>2023/07/30 20:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Sunny - 37 ºC (98.6 ºF)
+  Sunny - 36 ºC (96.8 ºF)
   <p align="center">🔼 43.4 ºC (110.1 ºF) 🔽 23.7 ºC (74.7 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
     <table align="center">
       <thead>
         <tr>
-          <th>19:00</th>
           <th>20:00</th>
           <th>21:00</th>
           <th>22:00</th>
@@ -39,7 +38,6 @@
       </thead>
       <tbody>
         <tr>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />31.5 ºC (88.7 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />27 ºC (80.6 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />25.4 ºC (77.7 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.6 ºC (76.3 ºF)</td>
@@ -54,15 +52,15 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SW 28.1 km/h (17.4 miles/h)
+      Wind - SW 25.9 km/h (16.1 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 16%
+      Humidity - 22%
       <br />
-      UV Index - 8 (Very High)
+      UV Index - 7 (High)
     </p>
   </details>
   <details align="center">

@@ -115,7 +115,6 @@ function findPosition (content) {
 
 function newData (weather) {
   const date = weather.lastupdate.replace(/-/g, '/')
-  const currentHours = process.env.ISGITHUB == null ? weather.hours.slice(new Date().getHours()) : weather.hours.slice(new Date().getHours() + 2)
 
   return '<!-- WEATHER -->\n' +
   '<p align="center">\n' +
@@ -131,20 +130,6 @@ function newData (weather) {
   `  <p align="center">🔼 ${weather.temperature.maxcs} ºC (${weather.temperature.maxft} ºF) 🔽 ${weather.temperature.mincs} ºC (${weather.temperature.minft} ºF)</p>\n` +
   '  <details align="center">\n' +
   '    <summary>🕐 Hourly forecast</summary>\n' +
-  '    <table align="center">\n' +
-  '      <thead>\n' +
-  '        <tr>\n' +
-    currentHours.map(h => 
-  `          <th>${h.time}:00</th>\n`).join('') +
-  '        </tr>\n' +
-  '      </thead>\n' +
-  '      <tbody>\n' +
-  '        <tr>\n' +
-    currentHours.map(h =>
-  `          <td><img src="https:${h.condition.icon}" alt="Weather icon"><br />${h.condition.text}<br />${h.tempcs} ºC (${h.tempft} ºF)</td>\n`).join('') +
-  '        </tr>\n' +
-  '      </tbody>\n' +
-  '    </table>\n' +
   '    <a href="https://www.weatherapi.com/" target="_blank">\n' +
   '      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">\n' +
   '    </a>\n' +

@@ -19,28 +19,14 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/07/31 22:15</strong>
+  <strong>2023/07/31 23:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Clear - 28 ºC (82.4 ºF)
+  Clear - 27 ºC (80.6 ºF)
   <p align="center">🔼 43.1 ºC (109.6 ºF) 🔽 22.1 ºC (71.8 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
-    <table align="center">
-      <thead>
-        <tr>
-          <th>22:00</th>
-          <th>23:00</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.7 ºC (76.5 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.6 ºC (76.3 ºF)</td>
-        </tr>
-      </tbody>
-    </table>
     <a href="https://www.weatherapi.com/" target="_blank">
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
     </a>
@@ -48,13 +34,13 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SSW 16.9 km/h (10.5 miles/h)
+      Wind - SSW 19.1 km/h (11.9 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 37%
+      Humidity - 42%
       <br />
       UV Index - 1 (Low)
     </p>

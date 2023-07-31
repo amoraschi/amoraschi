@@ -264,6 +264,8 @@ async function updateFiles (oldReadme, weather, image, oldImage) {
     sha: oldImage.sha
   })
 
+  await sleep(2500)
+
   console.log('Updating readme')
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
@@ -287,6 +289,10 @@ async function updateAll () {
   const oldImage = await fetchImage()
 
   await updateFiles(oldReadme, weather, image, oldImage)
+}
+
+async function sleep (ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 updateAll()

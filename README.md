@@ -16,22 +16,20 @@
 <!-- WEATHER -->
 <p align="center">
   <a href="https://www.weatherapi.com/" target="_blank">
-    <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
+    <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/07/31 07:15</strong>
+  <strong>2023/07/31 09:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Clear - 22 ºC (71.6 ºF)
+  Sunny - 23 ºC (73.4 ºF)
   <p align="center">🔼 43 ºC (109.4 ºF) 🔽 21.4 ºC (70.5 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
     <table align="center">
       <thead>
         <tr>
-          <th>7:00</th>
-          <th>8:00</th>
           <th>9:00</th>
           <th>10:00</th>
           <th>11:00</th>
@@ -51,8 +49,6 @@
       </thead>
       <tbody>
         <tr>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.6 ºC (76.3 ºF)</td>
-          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />27.3 ºC (81.1 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />30.2 ºC (86.4 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />32.9 ºC (91.2 ºF)</td>
           <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />38.7 ºC (101.7 ºF)</td>
@@ -78,15 +74,15 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - S 6.1 km/h (3.8 miles/h)
+      Wind - SW 3.6 km/h (2.2 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 61%
+      Humidity - 57%
       <br />
-      UV Index - 1 (Low)
+      UV Index - 8 (Very High)
     </p>
   </details>
   <details align="center">

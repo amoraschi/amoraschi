@@ -1,13 +1,12 @@
 import { config } from 'dotenv'
 import fetch from 'node-fetch'
 import { Octokit } from '@octokit/core'
-import { ChartJSNodeCanvas } from 'chartjs-node-canvas'
+import { getChart } from './getChart.js'
+import { fetchImage, fetchReadme } from './getSHA.js'
+import { generateReadme } from './generateReadme.js'
+import { findPosition, getUVIndex } from './utils.js'
 
 config()
-
-function getUVIndex (index) {
-  return index <= 2 ? 'Low' : ((index >= 3 && index <= 5) ? 'Moderate' : ((index >= 6 && index <= 7) ? 'High' : ((index >= 8 && index <= 10) ? 'Very High' : 'Extreme')))
-} 
 
 async function fetchWeather () {
   const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${process.env.KEY}&q=${process.env.POS}`)
@@ -84,160 +83,11 @@ async function fetchWeather () {
   }
 }
 
-async function fetchReadme () {
-  const res = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/README.md')
-  const parsed = await res.json()
-
-  return {
-    sha: parsed.sha,
-    content: parsed.content
-  }
-}
-
-async function fetchImage () {
-  const res = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/hourly.png')
-  const parsed = await res.json()
-
-  return {
-    sha: parsed.sha
-  }
-}
-
-function findPosition (content) {
-  const start = content.indexOf('<!-- WEATHER -->')
-  const end = content.indexOf('<!-- WEATHER END -->')
-
-  return {
-    start,
-    end
-  }
-}
-
-function newData (weather) {
-  const date = weather.lastupdate.replace(/-/g, '/')
-
-  return '<!-- WEATHER -->\n' +
-  '<p align="center">\n' +
-  '  <a href="https://www.weatherapi.com/" target="_blank">\n' +
-  `    <img src="https:${weather.condition.icon}" alt="Weather icon">\n` +
-  '  </a>\n' +
-  '  <br />\n' +
-  `  <strong>${date}</strong>\n` +
-  '  <br />\n' +
-  '  <strong>Today\'s forecast</strong>\n' +
-  '  <br />\n' +
-  `  ${weather.condition.text} - ${weather.temperature.currentcs} ºC (${weather.temperature.currentft} ºF)\n` +
-  `  <p align="center">🔼 ${weather.temperature.maxcs} ºC (${weather.temperature.maxft} ºF) 🔽 ${weather.temperature.mincs} ºC (${weather.temperature.minft} ºF)</p>\n` +
-  '  <details align="center">\n' +
-  '    <summary>🕐 Hourly forecast</summary>\n' +
-  '    <a href="https://www.weatherapi.com/" target="_blank">\n' +
-  '      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">\n' +
-  '    </a>\n' +
-  '  </details>\n' +
-  '  <details align="center">\n' +
-  '    <summary>⛅ Weather information</summary>\n' +
-  '    <p align="center">\n' +
-  `      Wind - ${weather.wind.direction} ${weather.wind.kph} km/h (${weather.wind.mph} miles/h)\n` +
-  '      <br />\n' +
-  `      Precipitation - ${weather.precipitation.mm} mm (${weather.precipitation.in} in)\n` +
-  '      <br />\n' +
-  `      Visibility - ${weather.visibility.km} km (${weather.visibility.miles} miles)\n` +
-  '      <br />\n' +
-  `      Humidity - ${weather.humidity}%\n` +
-  '      <br />\n' +
-  `      UV Index - ${weather.uv.index} (${weather.uv.text})\n` +
-  '    </p>\n' +
-  '  </details>\n' +
-  '  <details align="center">\n' +
-  '    <summary>🌍 Planetary information</summary>\n' +
-  '    <p align="center">\n' +
-  `      Sunrise - ${weather.sun.rise}\n` +
-  '      <br />\n' +
-  `      Sunset - ${weather.sun.set}\n` +
-  '      <br />\n' +
-  `      Moon phase - ${weather.moon.phase}\n` +
-  '      <br />\n' +
-  `      Moon illumination - ${weather.moon.illumination}%\n` +
-  '    </p>\n' +
-  '  </details>\n' +
-  '</p>\n'
-}
-
-async function getImage (hours) {
-  const width = 600
-  const height = 300
-  const backgroundColor = 'black'
-
-  const config = {
-    type: 'line',
-    data: {
-      labels: hours.map(d => `${d.time}:00`),
-      datasets: [
-        {
-          label: 'º Celsius',
-          data: hours.map(d => d.tempcs),
-          borderColor: [ 'rgba(255, 99, 132, 1)' ],
-          backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
-          yAxisID: 'celsius'
-        },
-        {
-          label: 'º Fahrenheit',
-          data: hours.map(d => d.tempft),
-          borderColor: [ 'rgba(54, 162, 235, 1)' ],
-          backgroundColor: [ 'rgba(54, 162, 235, 0.2)' ],
-          yAxisID: 'fahrenheit'
-        }
-      ],
-      borderWidth: 1
-    },
-    options: {
-      animation: false,
-      scales: {
-        celsius: {
-          type: 'linear',
-          position: 'left',
-          ticks: {
-            callback: (value) => ` ${value} ºC`
-          }
-        },
-        fahrenheit: {
-          type: 'linear',
-          position: 'right',
-          ticks: {
-            callback: (value) => `${value} ºF `
-          }
-        }
-      }
-    },
-    plugins: [{
-      id: 'background-colour',
-      beforeDraw: (chart) => {
-        const ctx = chart.ctx
-        ctx.save()
-        ctx.fillStyle = backgroundColor
-        ctx.fillRect(0, 0, width, height)
-        ctx.restore()
-      }
-    }]
-  }
-
-  const chartCallback = (ChartJS) => {
-    ChartJS.defaults.responsive = true
-    ChartJS.defaults.maintainAspectRatio = true
-    ChartJS.defaults.color = 'white'
-  }
-
-  const chart = new ChartJSNodeCanvas({ width, height, chartCallback })
-
-  const buffer = await chart.renderToBuffer(config)
-  return buffer.toString('base64')
-}
-
 async function updateFiles (oldReadme, weather, image, oldImage) {
   const octokit = new Octokit({ auth: process.env.PERSTOKEN })
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
-  const newContent = oldContent.slice(0, position.start) + newData(weather) + oldContent.slice(position.end)
+  const newContent = oldContent.slice(0, position.start) + generateReadme(weather) + oldContent.slice(position.end)
 
   console.log('Updating image')
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
@@ -267,7 +117,7 @@ async function updateFiles (oldReadme, weather, image, oldImage) {
 async function updateAll () {
   console.log('Fetching weather and image')
   const weather = await fetchWeather()
-  const image = await getImage(weather.hours)
+  const image = await getChart(weather.hours)
 
   console.log('Fetching old readme and image')
   const oldReadme = await fetchReadme()

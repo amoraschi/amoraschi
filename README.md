@@ -19,21 +19,63 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/07/31 01:15</strong>
+  <strong>2023/07/31 03:30</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Clear - 26 ºC (78.8 ºF)
+  Clear - 22.3 ºC (72.1 ºF)
   <p align="center">🔼 43 ºC (109.4 ºF) 🔽 21.7 ºC (71.1 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
     <table align="center">
       <thead>
         <tr>
+          <th>3:00</th>
+          <th>4:00</th>
+          <th>5:00</th>
+          <th>6:00</th>
+          <th>7:00</th>
+          <th>8:00</th>
+          <th>9:00</th>
+          <th>10:00</th>
+          <th>11:00</th>
+          <th>12:00</th>
+          <th>13:00</th>
+          <th>14:00</th>
+          <th>15:00</th>
+          <th>16:00</th>
+          <th>17:00</th>
+          <th>18:00</th>
+          <th>19:00</th>
+          <th>20:00</th>
+          <th>21:00</th>
+          <th>22:00</th>
+          <th>23:00</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />22.3 ºC (72.1 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />21.9 ºC (71.4 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />21.4 ºC (70.5 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />21.8 ºC (71.2 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.6 ºC (76.3 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />27.3 ºC (81.1 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />30.2 ºC (86.4 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />32.9 ºC (91.2 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />38.7 ºC (101.7 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />39 ºC (102.2 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />42.1 ºC (107.8 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />42.8 ºC (109 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />43 ºC (109.4 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />41.7 ºC (107.1 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />39.3 ºC (102.7 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />36.1 ºC (97 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />31.8 ºC (89.2 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />27.1 ºC (80.8 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon"><br />Sunny<br />25 ºC (77 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.2 ºC (75.6 ºF)</td>
+          <td><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon"><br />Clear<br />24.3 ºC (75.7 ºF)</td>
         </tr>
       </tbody>
     </table>
@@ -44,13 +86,13 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SSW 11.2 km/h (6.9 miles/h)
+      Wind - S 3.6 km/h (2.2 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 45%
+      Humidity - 50%
       <br />
       UV Index - 1 (Low)
     </p>

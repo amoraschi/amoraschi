@@ -19,12 +19,12 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/08/01 23:15</strong>
+  <strong>2023/08/02 00:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Clear - 27 ºC (80.6 ºF)
-  <p align="center">🔼 41.5 ºC (106.7 ºF) 🔽 19.1 ºC (66.4 ºF)</p>
+  Clear - 25 ºC (77 ºF)
+  <p align="center">🔼 42.6 ºC (108.7 ºF) 🔽 20.3 ºC (68.5 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
     <a href="https://www.weatherapi.com/" target="_blank">
@@ -34,13 +34,13 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SW 22 km/h (13.6 miles/h)
+      Wind - SW 11.2 km/h (6.9 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 45%
+      Humidity - 51%
       <br />
       UV Index - 1 (Low)
     </p>
@@ -48,13 +48,13 @@
   <details align="center">
     <summary>🌍 Planetary information</summary>
     <p align="center">
-      Sunrise - 07:28 AM
+      Sunrise - 07:29 AM
       <br />
-      Sunset - 09:32 PM
+      Sunset - 09:31 PM
       <br />
-      Moon phase - Full Moon
+      Moon phase - Waning Gibbous
       <br />
-      Moon illumination - 99%
+      Moon illumination - 100%
     </p>
   </details>
 </p>

@@ -19,11 +19,11 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/08/01 22:15</strong>
+  <strong>2023/08/01 23:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
-  Clear - 28 ºC (82.4 ºF)
+  Clear - 27 ºC (80.6 ºF)
   <p align="center">🔼 41.5 ºC (106.7 ºF) 🔽 19.1 ºC (66.4 ºF)</p>
   <details align="center">
     <summary>🕐 Hourly forecast</summary>
@@ -40,7 +40,7 @@
       <br />
       Visibility - 10 km (6 miles)
       <br />
-      Humidity - 42%
+      Humidity - 45%
       <br />
       UV Index - 1 (Low)
     </p>

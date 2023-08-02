@@ -21,12 +21,12 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/02 23:15</strong>
+    <strong>2023/08/03 00:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Clear - 30 ºC (86 ºF)
-    <p align="center">🔼 40.9 ºC (105.6 ºF) 🔽 19.8 ºC (67.6 ºF)</p>
+    Clear - 28 ºC (82.4 ºF)
+    <p align="center">🔼 38.3 ºC (100.9 ºF) 🔽 21 ºC (69.8 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
@@ -35,13 +35,13 @@
     <details align="center">
       <summary>🌍 Planetary information</summary>
       <p align="center">
-        Sunrise - 07:29 AM
+        Sunrise - 07:30 AM
         <br />
-        Sunset - 09:31 PM
+        Sunset - 09:30 PM
         <br />
         Moon phase - Waning Gibbous
         <br />
-        Moon illumination - 100%
+        Moon illumination - 98%
       </p>
     </details>
   </p>

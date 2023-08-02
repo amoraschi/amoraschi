@@ -51,6 +51,8 @@ function generateReadme (weather) {
   '      </p>\n' +
   '    </details>\n' +
   '  </p>\n' +
+  '  <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></em>\n' +
+  '  <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>\n' +
   '</details>\n'
 }
 

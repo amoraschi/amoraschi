@@ -17,12 +17,8 @@ function generateReadme (weather) {
   `    <p align="center">🔼 ${weather.temperature.maxcs} ºC (${weather.temperature.maxft} ºF) 🔽 ${weather.temperature.mincs} ºC (${weather.temperature.minft} ºF)</p>\n` +
   '    <details align="center">\n' +
   '      <summary>🕐 Hourly forecast</summary>\n' +
-  '      <a href="https://www.weatherapi.com/" target="_blank">\n' +
-  '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">\n' +
-  '      </a>\n' +
-  '      <a href="https://www.weatherapi.com/" target="_blank">\n' +
-  '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.png" alt="Hourly forecast">\n' +
-  '      </a>\n' +
+  '      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">\n' +
+  '      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.png" alt="Hourly forecast">\n' +
   '    </details>\n' +
   // '    <details align="center">\n' +
   // '      <summary>⛅ Weather information</summary>\n' +

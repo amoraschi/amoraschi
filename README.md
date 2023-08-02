@@ -21,7 +21,7 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/02 13:15</strong>
+    <strong>2023/08/02 13:30</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
@@ -30,22 +30,11 @@
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
       <a href="https://www.weatherapi.com/" target="_blank">
-        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
+        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
       </a>
-    </details>
-    <details align="center">
-      <summary>⛅ Weather information</summary>
-      <p align="center">
-        Wind - S 6.1 km/h (3.8 miles/h)
-        <br />
-        Precipitation - 0 mm (0 in)
-        <br />
-        Visibility - 10 km (6 miles)
-        <br />
-        Humidity - 52%
-        <br />
-        UV Index - 10 (Very High)
-      </p>
+      <a href="https://www.weatherapi.com/" target="_blank">
+        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.png" alt="Hourly forecast">
+      </a>
     </details>
     <details align="center">
       <summary>🌍 Planetary information</summary>

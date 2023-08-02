@@ -14,50 +14,53 @@
 </p>
 
 <!-- WEATHER -->
-<p align="center">
-  <a href="https://www.weatherapi.com/" target="_blank">
-    <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
-  </a>
-  <br />
-  <strong>2023/08/02 11:15</strong>
-  <br />
-  <strong>Today's forecast</strong>
-  <br />
-  Sunny - 26 ºC (78.8 ºF)
-  <p align="center">🔼 43 ºC (109.4 ºF) 🔽 19.8 ºC (67.6 ºF)</p>
-  <details align="center">
-    <summary>🕐 Hourly forecast</summary>
+<details align="center">
+  <summary>🌤️ Daily weather</summary>
+  <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
+      <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
-  </details>
-  <details align="center">
-    <summary>⛅ Weather information</summary>
-    <p align="center">
-      Wind - SSW 6.8 km/h (4.3 miles/h)
-      <br />
-      Precipitation - 0 mm (0 in)
-      <br />
-      Visibility - 10 km (6 miles)
-      <br />
-      Humidity - 61%
-      <br />
-      UV Index - 9 (Very High)
-    </p>
-  </details>
-  <details align="center">
-    <summary>🌍 Planetary information</summary>
-    <p align="center">
-      Sunrise - 07:29 AM
-      <br />
-      Sunset - 09:31 PM
-      <br />
-      Moon phase - Waning Gibbous
-      <br />
-      Moon illumination - 100%
-    </p>
-  </details>
-</p>
+    <br />
+    <strong>2023/08/02 12:15</strong>
+    <br />
+    <strong>Today's forecast</strong>
+    <br />
+    Sunny - 27 ºC (80.6 ºF)
+    <p align="center">🔼 43 ºC (109.4 ºF) 🔽 19.8 ºC (67.6 ºF)</p>
+    <details align="center">
+      <summary>🕐 Hourly forecast</summary>
+      <a href="https://www.weatherapi.com/" target="_blank">
+        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">
+      </a>
+    </details>
+    <details align="center">
+      <summary>⛅ Weather information</summary>
+      <p align="center">
+        Wind - SW 6.1 km/h (3.8 miles/h)
+        <br />
+        Precipitation - 0 mm (0 in)
+        <br />
+        Visibility - 10 km (6 miles)
+        <br />
+        Humidity - 58%
+        <br />
+        UV Index - 9 (Very High)
+      </p>
+    </details>
+    <details align="center">
+      <summary>🌍 Planetary information</summary>
+      <p align="center">
+        Sunrise - 07:29 AM
+        <br />
+        Sunset - 09:31 PM
+        <br />
+        Moon phase - Waning Gibbous
+        <br />
+        Moon illumination - 100%
+      </p>
+    </details>
+  </p>
+</details>
 <!-- WEATHER END -->
 
 <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>

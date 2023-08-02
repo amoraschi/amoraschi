@@ -7,6 +7,7 @@ import { generateReadme } from './generateReadme.js'
 import { findPosition, getUVIndex } from './utils.js'
 
 config()
+const startTime = new Date().getTime()
 
 async function fetchWeather () {
   const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${process.env.KEY}&q=${process.env.POS}`)
@@ -83,20 +84,32 @@ async function fetchWeather () {
   }
 }
 
-async function updateFiles (oldReadme, weather, image, oldImage) {
+async function updateFiles (oldReadme, weather, images, oldImages) {
   const octokit = new Octokit({ auth: process.env.PERSTOKEN })
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
   const newContent = oldContent.slice(0, position.start) + generateReadme(weather) + oldContent.slice(position.end)
 
-  console.log('Updating image')
+  console.log('Updating image 1')
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/hourly.png',
-    message: `Image update for ${weather.lastupdate}`,
-    content: image,
-    sha: oldImage.sha
+    path: 'data/hourly1.png',
+    message: `Image 1 update for ${weather.lastupdate}`,
+    content: images.image1.toString('base64'),
+    sha: oldImages.sha1
+  })
+
+  await sleep(2500)
+
+  console.log('Updating image 2')
+  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+    owner: 'amoraschi',
+    repo: 'amoraschi',
+    path: 'data/hourly2.png',
+    message: `Image 2 update for ${weather.lastupdate}`,
+    content: images.image2.toString('base64'),
+    sha: oldImages.sha2
   })
 
   await sleep(2500)
@@ -112,18 +125,19 @@ async function updateFiles (oldReadme, weather, image, oldImage) {
   })
 
   console.log(`Updated readme and image for ${weather.lastupdate}`)
+  console.log(`Time taken: ${((new Date().getTime() - startTime) / 1000).toFixed(2)} seconds`)
 }
 
 async function updateAll () {
   console.log('Fetching weather and image')
   const weather = await fetchWeather()
-  const image = await getChart(weather.hours)
+  const images = await getChart(weather.hours)
 
   console.log('Fetching old readme and image')
   const oldReadme = await fetchReadme()
-  const oldImage = await fetchImage()
+  const oldImages = await fetchImage()
 
-  await updateFiles(oldReadme, weather, image, oldImage)
+  await updateFiles(oldReadme, weather, images, oldImages)
 }
 
 async function sleep (ms) {

@@ -18,23 +18,26 @@ function generateReadme (weather) {
   '    <details align="center">\n' +
   '      <summary>🕐 Hourly forecast</summary>\n' +
   '      <a href="https://www.weatherapi.com/" target="_blank">\n' +
-  '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.png" alt="Hourly forecast">\n' +
+  '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">\n' +
+  '      </a>\n' +
+  '      <a href="https://www.weatherapi.com/" target="_blank">\n' +
+  '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.png" alt="Hourly forecast">\n' +
   '      </a>\n' +
   '    </details>\n' +
-  '    <details align="center">\n' +
-  '      <summary>⛅ Weather information</summary>\n' +
-  '      <p align="center">\n' +
-  `        Wind - ${weather.wind.direction} ${weather.wind.kph} km/h (${weather.wind.mph} miles/h)\n` +
-  '        <br />\n' +
-  `        Precipitation - ${weather.precipitation.mm} mm (${weather.precipitation.in} in)\n` +
-  '        <br />\n' +
-  `        Visibility - ${weather.visibility.km} km (${weather.visibility.miles} miles)\n` +
-  '        <br />\n' +
-  `        Humidity - ${weather.humidity}%\n` +
-  '        <br />\n' +
-  `        UV Index - ${weather.uv.index} (${weather.uv.text})\n` +
-  '      </p>\n' +
-  '    </details>\n' +
+  // '    <details align="center">\n' +
+  // '      <summary>⛅ Weather information</summary>\n' +
+  // '      <p align="center">\n' +
+  // `        Wind - ${weather.wind.direction} ${weather.wind.kph} km/h (${weather.wind.mph} miles/h)\n` +
+  // '        <br />\n' +
+  // `        Precipitation - ${weather.precipitation.mm} mm (${weather.precipitation.in} in)\n` +
+  // '        <br />\n' +
+  // `        Visibility - ${weather.visibility.km} km (${weather.visibility.miles} miles)\n` +
+  // '        <br />\n' +
+  // `        Humidity - ${weather.humidity}%\n` +
+  // '        <br />\n' +
+  // `        UV Index - ${weather.uv.index} (${weather.uv.text})\n` +
+  // '      </p>\n' +
+  // '    </details>\n' +
   '    <details align="center">\n' +
   '      <summary>🌍 Planetary information</summary>\n' +
   '      <p align="center">\n' +

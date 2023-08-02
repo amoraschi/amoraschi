@@ -1,47 +1,103 @@
 import { ChartJSNodeCanvas } from 'chartjs-node-canvas'
 
 async function getChart (hours) {
-  const width = 600
-  const height = 300
+  const width = 800
+  const height = 400
   const backgroundColor = 'black'
 
-  const config = {
+  const config1 = {
     type: 'line',
     data: {
       labels: hours.map(d => `${d.time}:00`),
       datasets: [
         {
-          label: 'º Celsius',
+          label: 'Temperature',
           data: hours.map(d => d.tempcs),
           borderColor: ['rgba(255, 99, 132, 1)'],
           backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-          yAxisID: 'celsius'
+          yAxisID: 'temperature'
         },
         {
-          label: 'º Fahrenheit',
-          data: hours.map(d => d.tempft),
+          label: 'Precipitation',
+          data: hours.map(d => d.precipitation.mm),
           borderColor: ['rgba(54, 162, 235, 1)'],
           backgroundColor: ['rgba(54, 162, 235, 0.2)'],
-          yAxisID: 'fahrenheit'
+          yAxisID: 'precipitation'
         }
       ],
       borderWidth: 1
     },
     options: {
+      tension: 0.25,
       animation: false,
       scales: {
-        celsius: {
+        temperature: {
           type: 'linear',
           position: 'left',
           ticks: {
-            callback: (value) => ` ${value} ºC`
+            callback: (value) => ` ${value} ºC (${Math.round(value * 1.8 + 32)} ºF)`
           }
         },
-        fahrenheit: {
+        precipitation: {
           type: 'linear',
           position: 'right',
           ticks: {
-            callback: (value) => `${value} ºF `
+            callback: (value) => `${value} mm (${Math.round(value * 0.0393701 * 100) / 100} in) `
+          },
+          min: 0
+        }
+      }
+    },
+    plugins: [{
+      id: 'background-colour',
+      beforeDraw: (chart) => {
+        const ctx = chart.ctx
+        ctx.save()
+        ctx.fillStyle = backgroundColor
+        ctx.fillRect(0, 0, width, height)
+        ctx.restore()
+      }
+    }]
+  }
+
+  const config2 = {
+    type: 'line',
+    data: {
+      labels: hours.map(d => `${d.time}:00`),
+      datasets: [
+        {
+          label: 'Wind',
+          data: hours.map(d => d.wind.kph),
+          borderColor: ['rgba(255, 99, 132, 1)'],
+          backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+          yAxisID: 'wind'
+        },
+        {
+          label: 'Humidity',
+          data: hours.map(d => d.humidity),
+          borderColor: ['rgba(75, 192, 192, 1)'],
+          backgroundColor: ['rgba(75, 192, 192, 0.2)'],
+          yAxisID: 'humidity'
+        }
+      ],
+      borderWidth: 1
+    },
+    options: {
+      tension: 0.25,
+      animation: false,
+      scales: {
+        wind: {
+          type: 'linear',
+          position: 'left',
+          ticks: {
+            callback: (value) => `${value} km/h (${Math.round(value / 1.609)} mph)`
+          }
+        },
+        humidity: {
+          type: 'linear',
+          position: 'right',
+          ticks: {
+            callback: (value) => `${value}%`
           }
         }
       }
@@ -66,8 +122,13 @@ async function getChart (hours) {
 
   const chart = new ChartJSNodeCanvas({ width, height, chartCallback })
 
-  const buffer = await chart.renderToBuffer(config)
-  return buffer.toString('base64')
+  const buffer1 = await chart.renderToBuffer(config1)
+  const buffer2 = await chart.renderToBuffer(config2)
+
+  return {
+    image1: buffer1,
+    image2: buffer2
+  }
 }
 
 export {

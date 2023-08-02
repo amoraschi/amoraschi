@@ -19,7 +19,7 @@
     <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
   </a>
   <br />
-  <strong>2023/08/02 08:15</strong>
+  <strong>2023/08/02 09:15</strong>
   <br />
   <strong>Today's forecast</strong>
   <br />
@@ -34,7 +34,7 @@
   <details align="center">
     <summary>⛅ Weather information</summary>
     <p align="center">
-      Wind - SW 6.8 km/h (4.3 miles/h)
+      Wind - SSW 6.8 km/h (4.3 miles/h)
       <br />
       Precipitation - 0 mm (0 in)
       <br />

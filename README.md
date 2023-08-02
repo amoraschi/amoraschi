@@ -50,8 +50,6 @@
 </details>
 <!-- WEATHER END -->
 
-<p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>
-
 <p align="center">
   <img src="https://discord.c99.nl/widget/theme-2/329599889174691841.png">
 </p>

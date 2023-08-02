@@ -21,20 +21,16 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/02 13:45</strong>
+    <strong>2023/08/02 14:30</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 30 ºC (86 ºF)
+    Sunny - 31 ºC (87.8 ºF)
     <p align="center">🔼 43 ºC (109.4 ºF) 🔽 19.8 ºC (67.6 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
-      <a href="https://www.weatherapi.com/" target="_blank">
-        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
-      </a>
-      <a href="https://www.weatherapi.com/" target="_blank">
-        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.png" alt="Hourly forecast">
-      </a>
+      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
+      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.png" alt="Hourly forecast">
     </details>
     <details align="center">
       <summary>🌍 Planetary information</summary>
@@ -49,6 +45,8 @@
       </p>
     </details>
   </p>
+  <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></em>
+  <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>
 </details>
 <!-- WEATHER END -->
 

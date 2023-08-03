@@ -21,12 +21,12 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/03 13:15</strong>
+    <strong>2023/08/03 13:30</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
     Sunny - 29 ºC (84.2 ºF)
-    <p align="center">🔼 38.7 ºC (101.7 ºF) 🔽 20.9 ºC (69.6 ºF)</p>
+    <p align="center">🔼 38.6 ºC (101.5 ºF) 🔽 21.1 ºC (70 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
@@ -38,6 +38,8 @@
         Sunrise - 07:30 AM
         <br />
         Sunset - 09:30 PM
+        <br />
+        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">
         <br />
         Moon phase - Waning Gibbous
         <br />

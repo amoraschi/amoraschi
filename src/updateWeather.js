@@ -6,6 +6,7 @@ import { fetchImage, fetchReadme } from './getSHA.js'
 import { generateReadme } from './generateReadme.js'
 import { findPosition, getUVIndex } from './utils.js'
 import { getMoon } from './getMoon.js'
+import { generateSun } from './generateSun.js'
 
 config()
 const startTime = new Date().getTime()
@@ -85,7 +86,19 @@ async function fetchWeather () {
   }
 }
 
-async function updateFiles (oldReadme, weather, images, oldImages, moonImage) {
+async function fetchSolarData () {
+  const latlong = {
+    lat: process.env.POS.split(',')[0],
+    long: process.env.POS.split(',')[1]
+  }
+
+  const res = await fetch(`https://api.ipgeolocation.io/astronomy?apiKey=${process.env.SUNKEY}&lat=${latlong.lat}&long=${latlong.long}`)
+  const parsed = await res.json()
+
+  return parsed
+}
+
+async function updateFiles (oldReadme, weather, images, oldImages, moonImage, sunImage) {
   const octokit = new Octokit({ auth: process.env.PERSTOKEN })
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
@@ -127,6 +140,18 @@ async function updateFiles (oldReadme, weather, images, oldImages, moonImage) {
 
   await sleep(2500)
 
+  console.log('Updating image 4')
+  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+    owner: 'amoraschi',
+    repo: 'amoraschi',
+    path: 'data/sun.svg',
+    message: `Image 4 update for ${weather.lastupdate}`,
+    content: Buffer.from(sunImage).toString('base64'),
+    sha: oldImages.sha4
+  })
+
+  await sleep(2500)
+
   console.log('Updating readme')
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
@@ -153,7 +178,11 @@ async function updateAll () {
   console.log('Fetching moon image')
   const moonImage = await getMoon()
 
-  await updateFiles(oldReadme, weather, images, oldImages, moonImage)
+  console.log('Fetching solar data')
+  const sunData = await fetchSolarData()
+  const sunImage = generateSun(sunData, weather)
+
+  await updateFiles(oldReadme, weather, images, oldImages, moonImage, sunImage)
 }
 
 async function sleep (ms) {

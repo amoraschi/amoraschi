@@ -37,9 +37,7 @@ function generateReadme (weather, moonImage) {
   '    <details align="center">\n' +
   '      <summary>🌍 Planetary information</summary>\n' +
   '      <p align="center">\n' +
-  `        Sunrise - ${weather.sun.rise}\n` +
-  '        <br />\n' +
-  `        Sunset - ${weather.sun.set}\n` +
+  `        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/sun.svg" alt="Sun position" width="500">\n` +
   '        <br />\n' +
   '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">\n' +
   '        <br />\n' +

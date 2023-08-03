@@ -5,6 +5,7 @@ import { getChart } from './getChart.js'
 import { fetchImage, fetchReadme } from './getSHA.js'
 import { generateReadme } from './generateReadme.js'
 import { findPosition, getUVIndex } from './utils.js'
+import { getMoon } from './getMoon.js'
 
 config()
 const startTime = new Date().getTime()
@@ -84,7 +85,7 @@ async function fetchWeather () {
   }
 }
 
-async function updateFiles (oldReadme, weather, images, oldImages) {
+async function updateFiles (oldReadme, weather, images, oldImages, moonImage) {
   const octokit = new Octokit({ auth: process.env.PERSTOKEN })
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
@@ -114,6 +115,18 @@ async function updateFiles (oldReadme, weather, images, oldImages) {
 
   await sleep(2500)
 
+  console.log('Updating image 3')
+  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+    owner: 'amoraschi',
+    repo: 'amoraschi',
+    path: 'data/moon.svg',
+    message: `Image 3 update for ${weather.lastupdate}`,
+    content: Buffer.from(moonImage).toString('base64'),
+    sha: oldImages.sha3
+  })
+
+  await sleep(2500)
+
   console.log('Updating readme')
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
@@ -137,7 +150,10 @@ async function updateAll () {
   const oldReadme = await fetchReadme()
   const oldImages = await fetchImage()
 
-  await updateFiles(oldReadme, weather, images, oldImages)
+  console.log('Fetching moon image')
+  const moonImage = await getMoon()
+
+  await updateFiles(oldReadme, weather, images, oldImages, moonImage)
 }
 
 async function sleep (ms) {

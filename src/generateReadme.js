@@ -1,4 +1,4 @@
-function generateReadme (weather) {
+function generateReadme (weather, moonImage) {
   const date = weather.lastupdate.replace(/-/g, '/')
 
   return '<!-- WEATHER -->\n' +
@@ -41,13 +41,15 @@ function generateReadme (weather) {
   '        <br />\n' +
   `        Sunset - ${weather.sun.set}\n` +
   '        <br />\n' +
+  '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">\n' +
+  '        <br />\n' +
   `        Moon phase - ${weather.moon.phase}\n` +
   '        <br />\n' +
   `        Moon illumination - ${weather.moon.illumination}%\n` +
   '      </p>\n' +
   '    </details>\n' +
   '  </p>\n' +
-  '  <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></em>\n' +
+  '  <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a> and <a href="https://www.icalendar37.net/lunar/app/" title="Lunar Calendar API">iCalendar</a></em>\n' +
   '  <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>\n' +
   '</details>\n'
 }

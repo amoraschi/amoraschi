@@ -1,5 +1,4 @@
 .env
 /node_modules
 TEST.md
-weather.json
-test.html
+test.*

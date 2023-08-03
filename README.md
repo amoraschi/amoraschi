@@ -35,9 +35,7 @@
     <details align="center">
       <summary>🌍 Planetary information</summary>
       <p align="center">
-        Sunrise - 07:31 AM
-        <br />
-        Sunset - 09:29 PM
+        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/sun.svg" alt="Sun position" width="250">
         <br />
         <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">
         <br />

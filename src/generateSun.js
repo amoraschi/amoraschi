@@ -32,6 +32,8 @@ function generateSun (sun, weather) {
 
   ctx.lineWidth = 2
 
+  console.log(sun.sun_azimuth, sun.sun_altitude)
+  
   const x = isSunRising(sun.sun_azimuth) ? 250 + 200 * Math.cos(sun.sun_altitude * Math.PI / 180) : 250 + 200 * -Math.cos(sun.sun_altitude * Math.PI / 180)
   const y = 150 - 100 * Math.sin(sun.sun_altitude * Math.PI / 180)
 

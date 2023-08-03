@@ -43,9 +43,7 @@ function generateReadme (weather, moonImage) {
   '        <br />\n' +
   '        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">\n' +
   '        <br />\n' +
-  `        Moon phase - ${weather.moon.phase}\n` +
-  '        <br />\n' +
-  `        Moon illumination - ${weather.moon.illumination}%\n` +
+  `        <strong>${weather.moon.phase}</strong> - ${weather.moon.illumination}%\n` +
   '      </p>\n' +
   '    </details>\n' +
   '  </p>\n' +

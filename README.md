@@ -21,12 +21,12 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/02 15:15</strong>
+    <strong>2023/08/03 13:30</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 33 ºC (91.4 ºF)
-    <p align="center">🔼 41.1 ºC (106 ºF) 🔽 19.8 ºC (67.6 ºF)</p>
+    Sunny - 29 ºC (84.2 ºF)
+    <p align="center">🔼 38.6 ºC (101.5 ºF) 🔽 21.1 ºC (70 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
@@ -35,17 +35,19 @@
     <details align="center">
       <summary>🌍 Planetary information</summary>
       <p align="center">
-        Sunrise - 07:29 AM
+        Sunrise - 07:30 AM
         <br />
-        Sunset - 09:31 PM
+        Sunset - 09:30 PM
+        <br />
+        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">
         <br />
         Moon phase - Waning Gibbous
         <br />
-        Moon illumination - 100%
+        Moon illumination - 98%
       </p>
     </details>
   </p>
-  <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></em>
+  <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a> and <a href="https://www.icalendar37.net/lunar/app/" title="Lunar Calendar API">iCalendar</a></em>
   <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>
 </details>
 <!-- WEATHER END -->

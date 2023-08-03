@@ -21,7 +21,7 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/04 00:00</strong>
+    <strong>2023/08/04 00:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
@@ -35,7 +35,9 @@
     <details align="center">
       <summary>🌍 Planetary information</summary>
       <p align="center">
-        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/sun.svg" alt="Sun position" width="250">
+        Sunrise - 07:31 AM
+        <br />
+        Sunset - 09:29 PM
         <br />
         <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">
         <br />

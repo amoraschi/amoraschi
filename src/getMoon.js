@@ -26,7 +26,6 @@ async function getMoon () {
   const image = await fetch('https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/cover.png')
   const base64 = await image.arrayBuffer()
   const decoded = Buffer.from(base64).toString('base64')
-
   const sanitizedString = moonPhase.svg.replace(/xlink:href/g, 'href')
   const xmlns = sanitizedString.replace(/<svg /, '<svg xmlns="http://www.w3.org/2000/svg" ')
   const toReturn = xmlns.replace(/href="(.*)"><\/image>/, `href="data:content/type;base64,${decoded}"></image>`)

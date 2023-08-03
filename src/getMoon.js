@@ -5,7 +5,7 @@ const config = {
   month: new Date().getMonth() + 1,
   year: new Date().getFullYear(),
   size: 500,
-  lightColor: '#f0f0ff',
+  lightColor: '#f0f0f0',
   shadeColor: '#202020',
   sizeQuarter: 100,
   texturize: true

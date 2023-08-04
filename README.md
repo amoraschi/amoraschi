@@ -21,12 +21,12 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/04 23:15</strong>
+    <strong>2023/08/05 00:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Clear - 30 ºC (86 ºF)
-    <p align="center">🔼 39.1 ºC (102.4 ºF) 🔽 19.4 ºC (66.9 ºF)</p>
+    Clear - 28 ºC (82.4 ºF)
+    <p align="center">🔼 40.8 ºC (105.4 ºF) 🔽 21 ºC (69.8 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
@@ -39,7 +39,7 @@
         <br />
         <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">
         <br />
-        <strong>Waning Gibbous</strong> - 92%
+        <strong>Waning Gibbous</strong> - 85%
       </p>
     </details>
   </p>

@@ -18,14 +18,14 @@
   <summary>🌤️ Daily weather</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/04 21:00</strong>
+    <strong>2023/08/04 22:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 37 ºC (98.6 ºF)
+    Clear - 35 ºC (95 ºF)
     <p align="center">🔼 39.1 ºC (102.4 ºF) 🔽 19.4 ºC (66.9 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>

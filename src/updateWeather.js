@@ -2,10 +2,10 @@ import { config } from 'dotenv'
 import fetch from 'node-fetch'
 import { Octokit } from '@octokit/core'
 import { getChart } from './getChart.js'
-import { fetchImage, fetchReadme } from './getSHA.js'
+import { fetchSHAs, fetchReadme } from './getSHA.js'
 import { generateReadme } from './generateReadme.js'
 import { findPosition, getUVIndex } from './utils.js'
-import { getMoon } from './getMoon.js'
+// import { getMoon } from './getMoon.js'
 import { generateSun } from './generateSun.js'
 
 config()
@@ -21,6 +21,7 @@ async function fetchWeather () {
   const hour = parsed.forecast.forecastday[0].hour
 
   return {
+    localtime: parsed.location.localtime_epoch,
     lastupdate: current.last_updated,
     date: parsed.forecast.forecastday[0].date,
     temperature: {
@@ -98,7 +99,7 @@ async function fetchSolarData () {
   return parsed
 }
 
-async function updateFiles (oldReadme, weather, images, oldImages, moonImage, sunImage) {
+async function updateFiles (oldReadme, weather, images, drawing, shas) {
   const octokit = new Octokit({ auth: process.env.PERSTOKEN })
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
@@ -111,7 +112,7 @@ async function updateFiles (oldReadme, weather, images, oldImages, moonImage, su
     path: 'data/hourly1.png',
     message: `Image 1 update for ${weather.lastupdate}`,
     content: images.image1.toString('base64'),
-    sha: oldImages.sha1
+    sha: shas.sha1
   })
 
   await sleep(2500)
@@ -123,7 +124,7 @@ async function updateFiles (oldReadme, weather, images, oldImages, moonImage, su
     path: 'data/hourly2.png',
     message: `Image 2 update for ${weather.lastupdate}`,
     content: images.image2.toString('base64'),
-    sha: oldImages.sha2
+    sha: shas.sha2
   })
 
   await sleep(2500)
@@ -132,22 +133,10 @@ async function updateFiles (oldReadme, weather, images, oldImages, moonImage, su
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/moon.svg',
+    path: 'data/drawing.svg',
     message: `Image 3 update for ${weather.lastupdate}`,
-    content: Buffer.from(moonImage).toString('base64'),
-    sha: oldImages.sha3
-  })
-
-  await sleep(2500)
-
-  console.log('Updating image 4')
-  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-    owner: 'amoraschi',
-    repo: 'amoraschi',
-    path: 'data/sun.svg',
-    message: `Image 4 update for ${weather.lastupdate}`,
-    content: Buffer.from(sunImage).toString('base64'),
-    sha: oldImages.sha4
+    content: Buffer.from(drawing).toString('base64'),
+    sha: shas.sha3
   })
 
   await sleep(2500)
@@ -173,16 +162,13 @@ async function updateAll () {
 
   console.log('Fetching old readme and image')
   const oldReadme = await fetchReadme()
-  const oldImages = await fetchImage()
-
-  console.log('Fetching moon image')
-  const moonImage = await getMoon()
+  const shas = await fetchSHAs()
 
   console.log('Fetching solar data')
-  const sunData = await fetchSolarData()
-  const sunImage = generateSun(sunData, weather)
+  const date = new Date(weather.localtime * 1000)
+  const drawing = generateSun(date, process.env.POS)
 
-  await updateFiles(oldReadme, weather, images, oldImages, moonImage, sunImage)
+  await updateFiles(oldReadme, weather, images, drawing, shas)
 }
 
 async function sleep (ms) {

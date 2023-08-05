@@ -4,7 +4,8 @@
     "canvas": "^2.11.2",
     "chartjs-node-canvas": "^4.1.6",
     "dotenv": "^16.3.1",
-    "node-fetch": "^3.3.1"
+    "node-fetch": "^3.3.1",
+    "suncalc": "^1.9.0"
   },
   "type": "module",
   "scripts": {

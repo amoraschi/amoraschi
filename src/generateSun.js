@@ -269,8 +269,8 @@ function generateSun (now, pos) {
   // Date And Hour
   ctx.fillStyle = 'white'
   ctx.font = 'bold 15px Arial'
-  const dateWidth = ctx.measureText(date).width
-  const hourWidth = ctx.measureText(hour).width
+  const dateWidth = ctx.measureText(localDate).width
+  const hourWidth = ctx.measureText(localHour).width
   ctx.fillText(localDate, width - dateWidth - 10, height - 10)
   ctx.fillText(localHour, width - hourWidth - 10, height - 25 - 10)
 

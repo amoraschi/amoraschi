@@ -21,7 +21,7 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/05 20:00</strong>
+    <strong>2023/08/05 20:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
@@ -40,7 +40,6 @@
     </details>
   </p>
   <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a> and <a href="https://www.icalendar37.net/lunar/app/" title="Lunar Calendar API">iCalendar</a></em>
-  <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>
 </details>
 <!-- WEATHER END -->
 

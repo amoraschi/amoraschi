@@ -205,6 +205,7 @@ function generateSun (now, pos) {
       text = props.hours + ':' + props.minutes + ' - ' + text
     }
 
+    console.log(localString)
     const textWidth = ctx.measureText(text).width
     const separation = 30
     if (key === 'solarNoon' || key === 'nadir') {

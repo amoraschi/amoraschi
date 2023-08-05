@@ -42,7 +42,6 @@ function generateReadme (weather, moonImage) {
   '    </details>\n' +
   '  </p>\n' +
   '  <em>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a> and <a href="https://www.icalendar37.net/lunar/app/" title="Lunar Calendar API">iCalendar</a></em>\n' +
-  '  <p align="center"><em>Send me a message through Discord if you manage to find out which city the forecast is from</em></p>\n' +
   '</details>\n'
 }
 

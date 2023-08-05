@@ -21,11 +21,11 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/05 19:15</strong>
+    <strong>2023/08/05 19:45</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 38 ºC (100.4 ºF)
+    Sunny - 39 ºC (102.2 ºF)
     <p align="center">🔼 40.8 ºC (105.4 ºF) 🔽 21 ºC (69.8 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
@@ -35,11 +35,7 @@
     <details align="center">
       <summary>🌍 Planetary information</summary>
       <p align="center">
-        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/sun.svg" alt="Sun position" width="500">
-        <br />
-        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/moon.svg" alt="Moon phase" width="250">
-        <br />
-        <strong>Waning Gibbous</strong> - 85%
+        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/drawing.svg" alt="Sun and Moon" width="800">
       </p>
     </details>
   </p>

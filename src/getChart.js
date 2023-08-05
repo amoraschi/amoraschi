@@ -2,7 +2,7 @@ import { ChartJSNodeCanvas } from 'chartjs-node-canvas'
 
 async function getChart (hours) {
   const width = 800
-  const height = 400
+  const height = 600
   const backgroundColor = 'black'
 
   const config1 = {

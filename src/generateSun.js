@@ -35,6 +35,9 @@ function generateSun (now, pos) {
     longitude: parseFloat(pos.split(',')[1])
   }
 
+  const localDate = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Europe/Madrid' })
+  const localHour = (now.getHours() < 10 ? '0' : '') + now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes()
+
   // const canvas = createCanvas(width, height)
   const canvas = createCanvas(width, height, 'svg')
   const ctx = canvas.getContext('2d')
@@ -188,11 +191,18 @@ function generateSun (now, pos) {
     // Name And Date
     ctx.fillStyle = 'white'
     ctx.font = 'bold 15px Arial'
+    const localString = position.time.toLocaleString('en-US', { timeZone: 'Europe/Madrid', hour12: false })
+    // output: 10/19/2012, 22:00:00
+    const props = {
+      hours: localString.split(',')[1].split(':')[0],
+      minutes: localString.split(',')[1].split(':')[1]
+    }
+
     let text = toTitleCase(key)
     if (x < 0) {
-      text += ' - ' + (position.time.getHours() < 10 ? '0' : '') + position.time.getHours() + ':' + (position.time.getMinutes() < 10 ? '0' : '') + position.time.getMinutes()
+      text += ' - ' + props.hours + ':' + props.minutes
     } else {
-      text = (position.time.getHours() < 10 ? '0' : '') + position.time.getHours() + ':' + (position.time.getMinutes() < 10 ? '0' : '') + position.time.getMinutes() + ' - ' + text
+      text = props.hours + ':' + props.minutes + ' - ' + text
     }
 
     const textWidth = ctx.measureText(text).width
@@ -259,12 +269,10 @@ function generateSun (now, pos) {
   // Date And Hour
   ctx.fillStyle = 'white'
   ctx.font = 'bold 15px Arial'
-  const date = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
-  const hour = (now.getHours() < 10 ? '0' : '') + now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes()
   const dateWidth = ctx.measureText(date).width
   const hourWidth = ctx.measureText(hour).width
-  ctx.fillText(date, width - dateWidth - 10, height - 10)
-  ctx.fillText(hour, width - hourWidth - 10, height - 25 - 10)
+  ctx.fillText(localDate, width - dateWidth - 10, height - 10)
+  ctx.fillText(localHour, width - hourWidth - 10, height - 25 - 10)
 
   // writeFileSync('test.png', canvas.toBuffer())
   return canvas.toBuffer()

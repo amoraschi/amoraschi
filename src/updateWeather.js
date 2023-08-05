@@ -165,8 +165,8 @@ async function updateAll () {
   const shas = await fetchSHAs()
 
   console.log('Fetching solar data')
-  // const date = new Date(weather.localtime * 1000)
-  const drawing = generateSun(new Date(), process.env.POS)
+  const date = new Date(weather.localtime * 1000)
+  const drawing = generateSun(date, process.env.POS)
 
   await updateFiles(oldReadme, weather, images, drawing, shas)
 }

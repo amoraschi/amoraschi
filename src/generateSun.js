@@ -2,7 +2,7 @@ import SunCalc from 'suncalc'
 import { createCanvas } from 'canvas'
 // import { writeFileSync } from 'fs'
 
-const width = 800
+const width = 900
 const height = 600
 
 // let j = 0
@@ -36,7 +36,7 @@ function generateSun (now, pos) {
   }
 
   const localDate = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Europe/Madrid' })
-  const localHour = (now.getHours() < 10 ? '0' : '') + now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes()
+  const localHour = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Madrid' })
 
   // const canvas = createCanvas(width, height)
   const canvas = createCanvas(width, height, 'svg')
@@ -192,7 +192,6 @@ function generateSun (now, pos) {
     ctx.fillStyle = 'white'
     ctx.font = 'bold 15px Arial'
     const localString = position.time.toLocaleString('en-US', { timeZone: 'Europe/Madrid', hour12: false })
-    // output: 10/19/2012, 22:00:00
     const props = {
       hours: localString.split(',')[1].split(':')[0],
       minutes: localString.split(',')[1].split(':')[1]
@@ -205,7 +204,6 @@ function generateSun (now, pos) {
       text = props.hours + ':' + props.minutes + ' - ' + text
     }
 
-    console.log(localString)
     const textWidth = ctx.measureText(text).width
     const separation = 30
     if (key === 'solarNoon' || key === 'nadir') {

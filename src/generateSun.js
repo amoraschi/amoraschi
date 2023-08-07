@@ -1,6 +1,7 @@
 import SunCalc from 'suncalc'
-import { createCanvas } from 'canvas'
+import { createCanvas, Image } from 'canvas'
 // import { writeFileSync } from 'fs'
+import { getMoon } from './getMoon.js'
 
 const width = 900
 const height = 600
@@ -28,8 +29,8 @@ const height = 600
 //   await new Promise(resolve => setTimeout(resolve, 250))
 // }
 
-// generateSun(new Date())
-function generateSun (now, pos) {
+// generateSun(new Date(), '37.39,-6')
+async function generateSun (now, pos) {
   const location = {
     latitude: parseFloat(pos.split(',')[0]),
     longitude: parseFloat(pos.split(',')[1])
@@ -37,6 +38,7 @@ function generateSun (now, pos) {
 
   const localDate = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Europe/Madrid' })
   const localHour = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Madrid' })
+  const moon = await getMoon()
 
   // const canvas = createCanvas(width, height)
   const canvas = createCanvas(width, height, 'svg')
@@ -272,6 +274,15 @@ function generateSun (now, pos) {
   const hourWidth = ctx.measureText(localHour).width
   ctx.fillText(localDate, width - dateWidth - 10, height - 10)
   ctx.fillText(localHour, width - hourWidth - 10, height - 25 - 10)
+
+  // Moon
+  const svg = new Image()
+  const image = new Image()
+  svg.onload = () => ctx.drawImage(svg, 10, 10, 100, 100)
+  image.onload = () => ctx.drawImage(image, 10, 10, 100, 100)
+
+  svg.src = `data:content/type;base64,${moon.svg}`
+  image.src = `data:content/type;base64,${moon.image}`
 
   // writeFileSync('test.png', canvas.toBuffer())
   return canvas.toBuffer()

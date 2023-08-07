@@ -122,7 +122,7 @@ async function updateFiles (oldReadme, weather, images, drawing, shas) {
     owner: 'amoraschi',
     repo: 'amoraschi',
     path: 'data/drawing.svg',
-    message: `Image 3 update for ${weather.lastupdate}`,
+    message: `Image 2 update for ${weather.lastupdate}`,
     content: Buffer.from(drawing).toString('base64'),
     sha: shas.sha2
   })
@@ -154,7 +154,7 @@ async function updateAll () {
 
   console.log('Fetching solar data')
   const date = new Date(weather.localtime * 1000)
-  const drawing = generateSun(date, process.env.POS)
+  const drawing = await generateSun(date, process.env.POS)
 
   await updateFiles(oldReadme, weather, images, drawing, shas)
 }

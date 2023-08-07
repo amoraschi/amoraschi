@@ -5,7 +5,7 @@ const config = {
   month: new Date().getMonth() + 1,
   year: new Date().getFullYear(),
   size: 500,
-  lightColor: '#f0f0f0',
+  lightColor: '#c0c0c0',
   shadeColor: '#202020',
   sizeQuarter: 100,
   texturize: true
@@ -30,7 +30,10 @@ async function getMoon () {
   const xmlns = sanitizedString.replace(/<svg /, '<svg xmlns="http://www.w3.org/2000/svg" ')
   const toReturn = xmlns.replace(/href="(.*)"><\/image>/, `href="data:content/type;base64,${decoded}"></image>`)
 
-  return toReturn
+  return {
+    svg: Buffer.from(toReturn).toString('base64'),
+    image: decoded
+  }
 }
 
 export {

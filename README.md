@@ -25,7 +25,7 @@
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 34 ºC (93.2 ºF)
+    Sunny - 36 ºC (96.8 ºF)
     <p align="center">🔼 43.7 ºC (110.7 ºF) 🔽 22.6 ºC (72.7 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>

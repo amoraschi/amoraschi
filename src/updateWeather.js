@@ -109,7 +109,7 @@ async function updateFiles (oldReadme, weather, images, drawing, shas) {
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/hourly1.png',
+    path: 'data/hourly1.svg',
     message: `Image 1 update for ${weather.lastupdate}`,
     content: images.image1.toString('base64'),
     sha: shas.sha1
@@ -121,7 +121,7 @@ async function updateFiles (oldReadme, weather, images, drawing, shas) {
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/hourly2.png',
+    path: 'data/hourly2.svg',
     message: `Image 2 update for ${weather.lastupdate}`,
     content: images.image2.toString('base64'),
     sha: shas.sha2

@@ -115,15 +115,14 @@ async function getChart (hours) {
   }
 
   const chartCallback = (ChartJS) => {
-    ChartJS.defaults.responsive = true
     ChartJS.defaults.maintainAspectRatio = true
     ChartJS.defaults.color = 'white'
   }
 
-  const chart = new ChartJSNodeCanvas({ width, height, chartCallback })
+  const chart = new ChartJSNodeCanvas({ width, height, chartCallback, type: 'svg' })
 
-  const buffer1 = await chart.renderToBuffer(config1)
-  const buffer2 = await chart.renderToBuffer(config2)
+  const buffer1 = chart.renderToBufferSync(config1, 'image/svg+xml')
+  const buffer2 = chart.renderToBufferSync(config2, 'image/svg+xml')
 
   return {
     image1: buffer1,

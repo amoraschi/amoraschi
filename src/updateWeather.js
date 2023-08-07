@@ -1,7 +1,7 @@
 import { config } from 'dotenv'
 import fetch from 'node-fetch'
 import { Octokit } from '@octokit/core'
-import { getChart } from './getChart.js'
+import { generateChart } from './generateChart.js'
 import { fetchSHAs, fetchReadme } from './getSHA.js'
 import { generateReadme } from './generateReadme.js'
 import { findPosition, getUVIndex } from './utils.js'
@@ -109,9 +109,9 @@ async function updateFiles (oldReadme, weather, images, drawing, shas) {
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/hourly1.svg',
+    path: 'data/hourly.svg',
     message: `Image 1 update for ${weather.lastupdate}`,
-    content: images.image1.toString('base64'),
+    content: images.toString('base64'),
     sha: shas.sha1
   })
 
@@ -121,22 +121,10 @@ async function updateFiles (oldReadme, weather, images, drawing, shas) {
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/hourly2.svg',
-    message: `Image 2 update for ${weather.lastupdate}`,
-    content: images.image2.toString('base64'),
-    sha: shas.sha2
-  })
-
-  await sleep(2500)
-
-  console.log('Updating image 3')
-  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-    owner: 'amoraschi',
-    repo: 'amoraschi',
     path: 'data/drawing.svg',
     message: `Image 3 update for ${weather.lastupdate}`,
     content: Buffer.from(drawing).toString('base64'),
-    sha: shas.sha3
+    sha: shas.sha2
   })
 
   await sleep(2500)
@@ -158,7 +146,7 @@ async function updateFiles (oldReadme, weather, images, drawing, shas) {
 async function updateAll () {
   console.log('Fetching weather and image')
   const weather = await fetchWeather()
-  const images = await getChart(weather.hours)
+  const images = await generateChart(weather.hours)
 
   console.log('Fetching old readme and image')
   const oldReadme = await fetchReadme()

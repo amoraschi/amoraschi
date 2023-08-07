@@ -16,9 +16,8 @@ function generateReadme (weather, moonImage) {
   `    ${weather.condition.text} - ${weather.temperature.currentcs} ºC (${weather.temperature.currentft} ºF)\n` +
   `    <p align="center">🔼 ${weather.temperature.maxcs} ºC (${weather.temperature.maxft} ºF) 🔽 ${weather.temperature.mincs} ºC (${weather.temperature.minft} ºF)</p>\n` +
   '    <details align="center">\n' +
-  '      <summary>🕐 Hourly forecast</summary>\n' +
-  '      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.svg" alt="Hourly forecast">\n' +
-  '      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.svg" alt="Hourly forecast">\n' +
+  '      <summary>📈 Forecast graph</summary>\n' +
+  '      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.svg" alt="Hourly forecast">\n' +
   '    </details>\n' +
   // '    <details align="center">\n' +
   // '      <summary>⛅ Weather information</summary>\n' +
@@ -37,7 +36,7 @@ function generateReadme (weather, moonImage) {
   '    <details align="center">\n' +
   '      <summary>🌍 Planetary information</summary>\n' +
   '      <p align="center">\n' +
-  `        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/drawing.svg" alt="Sun and Moon" width="800">\n` +
+  `        <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/drawing.svg" alt="Sun and Moon">\n` +
   '      </p>\n' +
   '    </details>\n' +
   '  </p>\n' +

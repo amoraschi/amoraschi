@@ -29,8 +29,8 @@
     <p align="center">🔼 43.7 ºC (110.7 ºF) 🔽 22.6 ºC (72.7 ºF)</p>
     <details align="center">
       <summary>🕐 Hourly forecast</summary>
-      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.png" alt="Hourly forecast">
-      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.png" alt="Hourly forecast">
+      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly1.svg" alt="Hourly forecast">
+      <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly2.svg" alt="Hourly forecast">
     </details>
     <details align="center">
       <summary>🌍 Planetary information</summary>

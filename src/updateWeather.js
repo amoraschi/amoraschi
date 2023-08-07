@@ -1,6 +1,7 @@
 import { config } from 'dotenv'
 import fetch from 'node-fetch'
-import { Octokit } from '@octokit/core'
+import Octo from '@octokit/core'
+import { createPullRequest } from 'octokit-plugin-create-pull-request'
 import { generateChart } from './generateChart.js'
 import { fetchSHAs, fetchReadme } from './getSHA.js'
 import { generateReadme } from './generateReadme.js'
@@ -100,43 +101,115 @@ async function fetchSolarData () {
 }
 
 async function updateFiles (oldReadme, weather, images, drawing, shas) {
+  const Octokit = Octo.Octokit.plugin(createPullRequest)
   const octokit = new Octokit({ auth: process.env.PERSTOKEN })
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
   const newContent = oldContent.slice(0, position.start) + generateReadme(weather) + oldContent.slice(position.end)
 
-  console.log('Updating image 1')
-  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+  // console.log('Updating image 1')
+  // await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+  //   owner: 'amoraschi',
+  //   repo: 'amoraschi',
+  //   path: 'data/hourly.svg',
+  //   message: `Image 1 update for ${weather.lastupdate}`,
+  //   content: images.toString('base64'),
+  //   sha: shas.sha1
+  // })
+
+  // await sleep(2500)
+
+  // console.log('Updating image 2')
+  // await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+  //   owner: 'amoraschi',
+  //   repo: 'amoraschi',
+  //   path: 'data/drawing.svg',
+  //   message: `Image 2 update for ${weather.lastupdate}`,
+  //   content: Buffer.from(drawing).toString('base64'),
+  //   sha: shas.sha2
+  // })
+
+  // await sleep(2500)
+
+  // console.log('Updating readme')
+  // await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+  //   owner: 'amoraschi',
+  //   repo: 'amoraschi',
+  //   path: 'README.md',
+  //   message: `Weather update for ${weather.lastupdate}`,
+  //   content: Buffer.from(newContent).toString('base64'),
+  //   sha: oldReadme.sha
+  // })
+  
+  const branchName = `update-${weather.localtime}`
+  const prTitle = `Weather update for ${weather.lastupdate}`
+  const prBody = `Updates the weather data and images for ${weather.lastupdate}`
+  
+  const sha = await octokit.request('GET /repos/{owner}/{repo}/git/refs/heads/{branch}', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/hourly.svg',
-    message: `Image 1 update for ${weather.lastupdate}`,
-    content: images.toString('base64'),
-    sha: shas.sha1
+    branch: 'master'
+  }).then(res => res.data.object.sha)
+
+  await sleep(1000)
+
+  await octokit.request('POST /repos/{owner}/{repo}/git/refs', {
+    owner: 'amoraschi',
+    repo: 'amoraschi',
+    ref: `refs/heads/${branchName}`,
+    sha: sha
   })
 
-  await sleep(2500)
+  await sleep(1000)
 
-  console.log('Updating image 2')
-  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+  console.log('Creating the PR')
+  const pr = await octokit.createPullRequest({
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'data/drawing.svg',
-    message: `Image 2 update for ${weather.lastupdate}`,
-    content: Buffer.from(drawing).toString('base64'),
-    sha: shas.sha2
+    title: prTitle,
+    body: prBody,
+    head: branchName,
+    changes: [
+      {
+        files: {
+          'data/hourly.svg': {
+            content: images.toString('base64'),
+            encoding: 'base64'
+          },
+          'data/drawing.svg': {
+            content: Buffer.from(drawing).toString('base64'),
+            encoding: 'base64'
+          },
+          'README.md': {
+            content: Buffer.from(newContent).toString('base64'),
+            encoding: 'base64'
+          }
+        },
+        commit: `Weather update for ${weather.lastupdate}`
+      }
+    ]
   })
 
-  await sleep(2500)
+  await sleep(1000)
 
-  console.log('Updating readme')
-  await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+  console.log('Merging the PR')
+  await octokit.request('PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge', {
     owner: 'amoraschi',
     repo: 'amoraschi',
-    path: 'README.md',
-    message: `Weather update for ${weather.lastupdate}`,
-    content: Buffer.from(newContent).toString('base64'),
-    sha: oldReadme.sha
+    pull_number: pr.data.number,
+    commit_title: `Weather update for ${weather.lastupdate}`,
+    commit_message: `Weather update for ${weather.lastupdate}`,
+    sha: pr.data.head.sha,
+    merge_method: 'merge'
+  })
+
+  await sleep(1000)
+
+  console.log('Removing the branch')
+  await octokit.request('DELETE /repos/{owner}/{repo}/git/refs/{ref}', {
+    owner: 'amoraschi',
+    repo: 'amoraschi',
+    ref: `heads/${branchName}`
   })
 
   console.log(`Updated readme and image for ${weather.lastupdate}`)

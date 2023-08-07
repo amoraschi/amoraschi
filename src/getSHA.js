@@ -11,8 +11,8 @@ async function fetchReadme () {
 }
 
 async function fetchSHAs () {
-  const res1 = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/hourly1.png')
-  const res2 = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/hourly2.png')
+  const res1 = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/hourly1.svg')
+  const res2 = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/hourly2.svg')
   const res3 = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/drawing.svg')
   const parsed1 = await res1.json()
   const parsed2 = await res2.json()

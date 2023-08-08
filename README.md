@@ -18,15 +18,15 @@
   <summary>🌤️ Daily weather</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/07 20:45</strong>
+    <strong>2023/08/08 13:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 40 ºC (104 ºF)
-    <p align="center">🔼 43.4 ºC (110.1 ºF) 🔽 23.5 ºC (74.3 ºF)</p>
+    Partly cloudy - 41.4 ºC (106.5 ºF)
+    <p align="center">🔼 43.5 ºC (110.3 ºF) 🔽 23.7 ºC (74.7 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.svg" alt="Hourly forecast">
@@ -60,3 +60,4 @@
   - [x] Japanese (intermediate)
   - [x] French (basic)
 </details>
+<!-- Hi, if you're reading this... -->

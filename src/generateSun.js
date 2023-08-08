@@ -91,17 +91,6 @@ async function generateSun (now, pos) {
     return SunCalc.getMoonTimes(date, location.latitude, location.longitude)
   }
 
-  // function getLunarData (date) {
-  //   const times = getLunarTimes(date)
-  //   const positions = Object.keys(times).reduce((acc, key) => {
-  //     acc[key] = getLunarPosition(times[key])
-  //     acc[key].time = times[key]
-  //     return acc
-  //   }, {})
-
-  //   return positions
-  // }
-
   function getLunarIllumination (date) {
     return SunCalc.getMoonIllumination(date)
   }
@@ -139,7 +128,6 @@ async function generateSun (now, pos) {
   ctx.lineWidth = 1
 
   const solarData = getSolarData(now)
-  // const lunarData = getLunarData(now)
   // GoldenHourEnd-GoldenHour
   const goldenHourEnd = solarData.goldenHourEnd
   const goldenHour = solarData.goldenHour
@@ -236,7 +224,6 @@ async function generateSun (now, pos) {
   ctx.font = 'bold 15px Arial'
   const moonPhaseText = toTitleCase(getLunarPhase(moonPhase.phase)) + ` - ${Math.round(moonPhase.fraction * 100)}%`
   const moonPhaseTextWidth = ctx.measureText(moonPhaseText).width
-  // Put it at the bottom of the canvas
   ctx.fillText(moonPhaseText, 7.5, height - 10, moonPhaseTextWidth)
 
   // Sun

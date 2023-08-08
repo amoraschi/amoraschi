@@ -3,10 +3,9 @@ import fetch from 'node-fetch'
 import Octo from '@octokit/core'
 import { createPullRequest } from 'octokit-plugin-create-pull-request'
 import { generateChart } from './generateChart.js'
-import { fetchSHAs, fetchReadme } from './getSHA.js'
+import { fetchReadme } from './getSHA.js'
 import { generateReadme } from './generateReadme.js'
 import { findPosition, getUVIndex } from './utils.js'
-// import { getMoon } from './getMoon.js'
 import { generateSun } from './generateSun.js'
 
 config()
@@ -100,47 +99,13 @@ async function fetchSolarData () {
   return parsed
 }
 
-async function updateFiles (oldReadme, weather, images, drawing, shas) {
+async function updateFiles (oldReadme, weather, images, drawing) {
   const Octokit = Octo.Octokit.plugin(createPullRequest)
   const octokit = new Octokit({ auth: process.env.PERSTOKEN })
   const oldContent = Buffer.from(oldReadme.content, 'base64').toString('utf-8')
   const position = findPosition(oldContent)
   const newContent = oldContent.slice(0, position.start) + generateReadme(weather) + oldContent.slice(position.end)
 
-  // console.log('Updating image 1')
-  // await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-  //   owner: 'amoraschi',
-  //   repo: 'amoraschi',
-  //   path: 'data/hourly.svg',
-  //   message: `Image 1 update for ${weather.lastupdate}`,
-  //   content: images.toString('base64'),
-  //   sha: shas.sha1
-  // })
-
-  // await sleep(2500)
-
-  // console.log('Updating image 2')
-  // await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-  //   owner: 'amoraschi',
-  //   repo: 'amoraschi',
-  //   path: 'data/drawing.svg',
-  //   message: `Image 2 update for ${weather.lastupdate}`,
-  //   content: Buffer.from(drawing).toString('base64'),
-  //   sha: shas.sha2
-  // })
-
-  // await sleep(2500)
-
-  // console.log('Updating readme')
-  // await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-  //   owner: 'amoraschi',
-  //   repo: 'amoraschi',
-  //   path: 'README.md',
-  //   message: `Weather update for ${weather.lastupdate}`,
-  //   content: Buffer.from(newContent).toString('base64'),
-  //   sha: oldReadme.sha
-  // })
-  
   const branchName = `update-${weather.localtime}`
   const prTitle = `Weather update for ${weather.lastupdate}`
   const prBody = `Updates the weather data and images for ${weather.lastupdate}`
@@ -223,13 +188,12 @@ async function updateAll () {
 
   console.log('Fetching old readme and image')
   const oldReadme = await fetchReadme()
-  const shas = await fetchSHAs()
 
   console.log('Fetching solar data')
   const date = new Date(weather.localtime * 1000)
   const drawing = await generateSun(date, process.env.POS)
 
-  await updateFiles(oldReadme, weather, images, drawing, shas)
+  await updateFiles(oldReadme, weather, images, drawing)
 }
 
 async function sleep (ms) {

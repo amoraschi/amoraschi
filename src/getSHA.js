@@ -10,19 +10,6 @@ async function fetchReadme () {
   }
 }
 
-async function fetchSHAs () {
-  const res1 = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/hourly.svg')
-  const res2 = await fetch('https://api.github.com/repos/amoraschi/amoraschi/contents/data/drawing.svg')
-  const parsed1 = await res1.json()
-  const parsed2 = await res2.json()
-
-  return {
-    sha1: parsed1.sha,
-    sha2: parsed2.sha
-  }
-}
-
 export {
-  fetchReadme,
-  fetchSHAs
+  fetchReadme
 }

@@ -21,11 +21,11 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/09 01:15</strong>
+    <strong>2023/08/09 03:30</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Clear - 30 ºC (86 ºF)
+    Clear - 27 ºC (80.6 ºF)
     <p align="center">🔼 42.5 ºC (108.5 ºF) 🔽 23.1 ºC (73.6 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>

@@ -22,15 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      # - name: Configure .env file
-      #   run: |
-      #     touch .env
-      #     echo KEY=${{ secrets.KEY }} >> .env
-      #     echo POS=${{ secrets.POS }} >> .env
-      #     echo PERSTOKEN=${{ secrets.PERSTOKEN }} >> .env
-      #     echo ISGITHUB=${{ secrets.ISGITHUB }} >> .env
-      #     echo SUNKEY=${{ secrets.SUNKEY }} >> .env
-
       - name: Run hourly update script
         env:
           KEY: ${{ secrets.KEY }}

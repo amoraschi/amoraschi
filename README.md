@@ -21,12 +21,12 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/10 09:15</strong>
+    <strong>2023/08/10 10:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 25 ºC (77 ºF)
-    <p align="center">🔼 44.7 ºC (112.5 ºF) 🔽 24.1 ºC (75.4 ºF)</p>
+    Sunny - 27 ºC (80.6 ºF)
+    <p align="center">🔼 44.8 ºC (112.6 ºF) 🔽 24.4 ºC (75.9 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.svg" alt="Hourly forecast">

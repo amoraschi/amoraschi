@@ -155,7 +155,7 @@ async function updateFiles (oldReadme, weather, images, drawing) {
     ]
   })
 
-  await sleep(1000)
+  await sleep(5000)
 
   console.log('Merging the PR')
   await octokit.request('PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge', {

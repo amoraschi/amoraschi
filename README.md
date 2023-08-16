@@ -18,15 +18,15 @@
   <summary>🌤️ Daily weather</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/16 21:00</strong>
+    <strong>2023/08/16 22:00</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 32 ºC (89.6 ºF)
-    <p align="center">🔼 37.1 ºC (98.8 ºF) 🔽 20.1 ºC (68.2 ºF)</p>
+    Clear - 29 ºC (84.2 ºF)
+    <p align="center">🔼 36.8 ºC (98.2 ºF) 🔽 20.1 ºC (68.2 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.svg" alt="Hourly forecast">

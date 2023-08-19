@@ -53,7 +53,7 @@ async function fetchWeather () {
     },
     condition: {
       text: current.condition.text,
-      icon: current.condition.icon
+      icon: `https:${current.condition.icon}`
     },
     sun: {
       rise: astro.sunrise,
@@ -70,7 +70,7 @@ async function fetchWeather () {
         tempft: h.temp_f,
         condition: {
           text: h.condition.text,
-          icon: h.condition.icon
+          icon: `https:${h.condition.icon}`
         },
         wind: {
           kph: h.wind_kph,

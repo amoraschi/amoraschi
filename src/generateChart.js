@@ -5,7 +5,7 @@ async function generateChart (hours) {
   const height = 400
   const backgroundColor = 'black'
 
-  const config1 = {
+  const config = {
     type: 'line',
     data: {
       labels: hours.map(d => {
@@ -94,7 +94,7 @@ async function generateChart (hours) {
 
   const chart = new ChartJSNodeCanvas({ width, height, chartCallback, type: 'svg' })
 
-  const buffer = chart.renderToBufferSync(config1, 'image/svg+xml')
+  const buffer = chart.renderToBufferSync(config, 'image/svg+xml')
 
   return buffer
 }

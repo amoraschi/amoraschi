@@ -6,7 +6,7 @@ function generateReadme (weather, moonImage) {
   '  <summary>🌤️ Daily weather</summary>\n' +
   '  <p align="center">\n' +
   '    <a href="https://www.weatherapi.com/" target="_blank">\n' +
-  `      <img src="https:${weather.condition.icon}" alt="Weather icon">\n` +
+  `      <img src="${weather.condition.icon}" alt="Weather icon">\n` +
   '    </a>\n' +
   '    <br />\n' +
   `    <strong>${date}</strong>\n` +

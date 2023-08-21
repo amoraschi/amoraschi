@@ -21,11 +21,11 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/08/21 08:15</strong>
+    <strong>2023/08/21 09:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 23 ºC (73.4 ºF)
+    Sunny - 26 ºC (78.8 ºF)
     <p align="center">🔼 44 ºC (111.2 ºF) 🔽 24.7 ºC (76.5 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>

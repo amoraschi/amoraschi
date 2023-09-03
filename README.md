@@ -18,14 +18,14 @@
   <summary>🌤️ Daily weather</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/night/389.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/03 06:15</strong>
+    <strong>2023/09/03 07:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Clear - 19 ºC (66.2 ºF)
+    Moderate or heavy rain with thunder - 16 ºC (60.8 ºF)
     <p align="center">🔼 27 ºC (80.6 ºF) 🔽 17.8 ºC (64 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>

@@ -21,11 +21,11 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/296.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/03 13:00</strong>
+    <strong>2023/09/03 14:30</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Light rain - 17 ºC (62.6 ºF)
+    Light rain - 18 ºC (64.4 ºF)
     <p align="center">🔼 27 ºC (80.6 ºF) 🔽 17.8 ºC (64 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>

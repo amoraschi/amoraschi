@@ -18,10 +18,10 @@
   <summary>🌤️ Daily weather</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/night/389.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/day/389.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/03 07:15</strong>
+    <strong>2023/09/03 08:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />

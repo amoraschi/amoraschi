@@ -21,12 +21,12 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/04 21:00</strong>
+    <strong>2023/09/05 00:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Clear - 24 ºC (75.2 ºF)
-    <p align="center">🔼 27.1 ºC (80.8 ºF) 🔽 16.9 ºC (62.4 ºF)</p>
+    Clear - 21 ºC (69.8 ºF)
+    <p align="center">🔼 28.3 ºC (82.9 ºF) 🔽 18.1 ºC (64.6 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.svg" alt="Hourly forecast">

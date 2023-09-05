@@ -15,7 +15,7 @@
 
 <!-- WEATHER -->
 <details align="center">
-  <summary>🌤️ Daily weather</summary>
+  <summary>Weather project</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
       <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Weather icon">

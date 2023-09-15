@@ -21,12 +21,12 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/15 15:15</strong>
+    <strong>2023/09/15 16:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
     Partly cloudy - 28 ºC (82.4 ºF)
-    <p align="center">🔼 28.2 ºC (82.8 ºF) 🔽 20.8 ºC (69.4 ºF)</p>
+    <p align="center">🔼 28.7 ºC (83.7 ºF) 🔽 20.6 ºC (69.1 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.svg" alt="Hourly forecast">

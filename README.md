@@ -18,14 +18,14 @@
   <summary>Weather project</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/night/122.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/16 01:15</strong>
+    <strong>2023/09/16 03:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Partly cloudy - 21 ºC (69.8 ºF)
+    Overcast - 21 ºC (69.8 ºF)
     <p align="center">🔼 26.9 ºC (80.4 ºF) 🔽 18.3 ºC (64.9 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>

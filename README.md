@@ -18,10 +18,10 @@
   <summary>Weather project</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/18 07:15</strong>
+    <strong>2023/09/18 08:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />

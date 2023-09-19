@@ -18,14 +18,14 @@
   <summary>Weather project</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/19 20:15</strong>
+    <strong>2023/09/19 21:00</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Sunny - 28 ºC (82.4 ºF)
+    Clear - 26 ºC (78.8 ºF)
     <p align="center">🔼 28.6 ºC (83.4 ºF) 🔽 17.4 ºC (63.3 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>

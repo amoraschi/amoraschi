@@ -18,15 +18,15 @@
   <summary>Weather project</summary>
   <p align="center">
     <a href="https://www.weatherapi.com/" target="_blank">
-      <img src="https://cdn.weatherapi.com/weather/64x64/night/296.png" alt="Weather icon">
+      <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/21 23:15</strong>
+    <strong>2023/09/22 00:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Light rain - 21 ºC (69.8 ºF)
-    <p align="center">🔼 25.9 ºC (78.6 ºF) 🔽 16.6 ºC (61.9 ºF)</p>
+    Partly cloudy - 20 ºC (68 ºF)
+    <p align="center">🔼 26.9 ºC (80.4 ºF) 🔽 15.5 ºC (59.8 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>
       <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/hourly.svg" alt="Hourly forecast">

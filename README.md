@@ -21,11 +21,11 @@
       <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Weather icon">
     </a>
     <br />
-    <strong>2023/09/21 17:15</strong>
+    <strong>2023/09/21 18:15</strong>
     <br />
     <strong>Today's forecast</strong>
     <br />
-    Partly cloudy - 23 ºC (73.4 ºF)
+    Partly cloudy - 22 ºC (71.6 ºF)
     <p align="center">🔼 25.5 ºC (77.9 ºF) 🔽 16.6 ºC (61.9 ºF)</p>
     <details align="center">
       <summary>📈 Forecast graph</summary>

@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/badges/shields"><img src="https://img.shields.io/badge/amoraschi-7289da?style=for-the-badge&logo=discord" alt="Discord"></a>
+  <a href="https://github.com/badges/shields"><img src="https://img.shields.io/badge/amoraschi-000000?style=for-the-badge&logo=discord" alt="Discord"></a>
   <a href="https://github.com/badges/shields"><img src="https://custom-icon-badges.demolab.com/github/followers/amoraschi?style=for-the-badge&labelColor=black&color=black&logo=person-add" alt="Followers"></a>
 <!--   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/badge/Student-blue?style=for-the-badge" alt="Learning"></a> -->
   <br />

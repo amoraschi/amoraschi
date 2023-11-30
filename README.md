@@ -9,19 +9,26 @@
   <a href="https://github.com/badges/shields"><img src="https://custom-icon-badges.demolab.com/github/followers/amoraschi?style=for-the-badge&labelColor=black&color=black&logo=person-add" alt="Followers"></a>
 <!--   <a href="https://github.com/amoraschi"><img src="https://img.shields.io/badge/Student-blue?style=for-the-badge" alt="Learning"></a> -->
   <br />
-  <a href="https://github.com/silentsoft/hits"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge&color=0aba59&labelColor=0aba59" alt="Hits"></a>
+  <a href="https://github.com/silentsoft/hits"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge&color=0aba59&labelColor=0aba59&logo=github" alt="Hits"></a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg" alt="nodejs" width="50"/>
+<!--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="nodejs" width="50"/> -->
 <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50"/> -->
 <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html" width="40"/> -->
 <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css" width="40"/> -->
 <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40"/> -->
-  <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/svg/next.svg" alt="next" width="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="ts" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="50"/>
   <br />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" alt="typescript" width="50"/>
+  <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/svg/next.svg" alt="next" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwind" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="express" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="socketio" width="50"/>
+  <br />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="firebase" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="electron" width="50"/>
 </p>
 
 <p align="center">

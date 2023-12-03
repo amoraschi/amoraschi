@@ -21,7 +21,7 @@ ctx.clip()
 
 const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height)
 
-gradient.addColorStop(0, 'rgba(0, 0, 0, 1)')
+gradient.addColorStop(0, 'rgba(0, 0, 0, 0)')
 gradient.addColorStop(1, 'rgba(127, 127, 127, 0.5)')
 ctx.fillStyle = gradient
 ctx.fillRect(0, 0, canvas.width, canvas.height)

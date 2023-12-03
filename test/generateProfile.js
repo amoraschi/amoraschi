@@ -15,10 +15,6 @@ ctx.strokeStyle = 'rgba(0, 0, 0, 1)'
 ctx.lineWidth = 5
 ctx.strokeRect(0, 0, canvas.width, canvas.height)
 
-ctx.strokeStyle = 'rgba(0, 0, 0, 1)'
-ctx.lineWidth = 2
-ctx.strokeRect(5, 5, canvas.width - 10, canvas.height - 10)
-
 ctx.font = 'bold 30px Arial'
 ctx.fillStyle = 'white'
 ctx.textAlign = 'center'

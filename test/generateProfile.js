@@ -19,7 +19,7 @@ ctx.quadraticCurveTo(0, 0, radius, 0)
 ctx.closePath()
 ctx.clip()
 
-const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height)
+const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0)
 
 gradient.addColorStop(0, 'rgba(0, 0, 0, 0)')
 gradient.addColorStop(1, 'rgba(255, 255, 255, 1)')

@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?weight=300&size=30&pause=1000&color=2CDAF7&center=true&vCenter=true&width=435&lines=Angelo+Moraschi" alt="Typing SVG" />
+<!--     <img src="https://readme-typing-svg.demolab.com?weight=300&size=30&pause=1000&color=2CDAF7&center=true&vCenter=true&width=435&lines=Angelo+Moraschi" alt="Typing SVG" /> -->
+    <img src="https://raw.githubusercontent.com/amoraschi/amoraschi/master/data/profile.png" alt="Profile image" />
   </a>
 </p>
 

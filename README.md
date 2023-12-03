@@ -52,9 +52,7 @@
 <p align="center">
 <!--   <img src="https://github-readme-stats.vercel.app/api?username=amoraschi&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="amoraschi's GitHub stats" width="420px"/> -->
 <!--   <br /> -->
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=amoraschi&theme=transparent&hide_border=true&background=0%2C000000%2C80808080&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF&stroke=000000&ring=FFFFFF&fire=FFFFFF" alt="GitHub Streak" />
-  </a>
+  <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=amoraschi&theme=transparent&background=0%2C00000000%2CFFFFFF&border=FFFFFF00&stroke=FFFFFF00" alt="GitHub Streak" /></a>
 </p>
 
 <!-- WEATHER -->

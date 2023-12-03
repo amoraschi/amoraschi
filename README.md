@@ -12,6 +12,8 @@
   <a href="https://github.com/silentsoft/hits"><img src="https://hits.sh/github.com/amoraschi.svg?style=for-the-badge&color=0aba59&labelColor=0aba59&logo=github" alt="Hits"></a>
 </p>
 
+---
+
 <p align="center">
 <!--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="nodejs" width="50"/> -->
 <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50"/> -->
@@ -43,6 +45,8 @@
   <a href="https://github.com/developStorm/simple-badges"><img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=000&style=for-the-badge" alt="firebase"/></a>
   <a href="https://github.com/developStorm/simple-badges"><img src="https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=fff&style=for-the-badge" alt="electron"/></a>
 </p>
+
+---
 
 <p align="center">
 <!--   <img src="https://github-readme-stats.vercel.app/api?username=amoraschi&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="amoraschi's GitHub stats" width="420px"/> -->

@@ -27,12 +27,12 @@ ctx.fillStyle = gradient
 ctx.fillRect(0, 0, canvas.width, canvas.height)
 
 ctx.font = 'bold 30px Arial'
-ctx.fillStyle = 'white'
+ctx.fillStyle = '#006AFF'
 ctx.textAlign = 'center'
 ctx.fillText('Angelo Moraschi', canvas.width / 2, canvas.height / 2 + 10)
 
 ctx.font = 'bold 15px Arial'
-ctx.fillStyle = 'white'
+ctx.fillStyle = '#006AFF'
 ctx.textAlign = 'center'
 ctx.fillText('Software Engineering Student', canvas.width / 2, canvas.height / 2 + 35)
 

@@ -1,7 +1,7 @@
 import { createCanvas, registerFont } from 'canvas'
 import { writeFileSync } from 'fs'
 
-const canvas = createCanvas(500, 200)
+const canvas = createCanvas(750, 300)
 const ctx = canvas.getContext('2d')
 
 const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height)

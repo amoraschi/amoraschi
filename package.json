@@ -2,7 +2,6 @@
   "dependencies": {
     "@octokit/core": "^5.0.0",
     "canvas": "^2.11.2",
-    "chartjs-node-canvas": "^4.1.6",
     "dotenv": "^16.3.1",
     "node-fetch": "^3.3.1",
     "octokit-plugin-create-pull-request": "^5.1.0",
@@ -10,6 +9,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "node src/updateWeather.js"
-  }
+    "start": "node ."
+  },
+  "main": "src/index.js"
 }

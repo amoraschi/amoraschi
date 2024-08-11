@@ -5,6 +5,10 @@
   </a>
 </p> -->
 
+<h3 align="center">
+  "1.21 gigawatts!?"
+</h3>
+
 <p align="center">
   <a href="https://github.com/badges/shields"><img src="https://img.shields.io/badge/amoraschi-000000?style=for-the-badge&logo=discord" alt="Discord"></a>
   <a href="https://github.com/badges/shields"><img src="https://custom-icon-badges.demolab.com/github/followers/amoraschi?style=for-the-badge&labelColor=black&color=black&logo=person-add" alt="Followers"></a>

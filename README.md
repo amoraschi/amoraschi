@@ -6,7 +6,7 @@
 </p> -->
 
 <h3 align="center">
-  "1.21 gigawatts!?"
+  "1.21 Gigawatts!?"
 </h3>
 
 <p align="center">
